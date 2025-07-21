@@ -1,0 +1,14 @@
+<div id="galleryitem" >
+    <br>
+    <span class="%STATUS->value%" id="item-%i->value%" >
+       <div class="checked" >
+            <input class="checkbox" type="checkbox" id="bindto[%id->value%]" name="bindto[%id->value%]" %imgexist->value% >
+            <label for="bindto[%id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/a/add.svg" alt="%added%" >
+            </label>
+        </div>
+    </span>
+     %namekey->value%
+    <figure>        <img src="%path.install->value%%urlto->value%" width="150" height="150" />    </figure>
+    <time>%image_time->value%</time>
+</div>

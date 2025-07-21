@@ -1,0 +1,12 @@
+<br>
+
+<div>
+   <div class="onoff" >
+        <input class="checkbox col-lg-1" type='checkbox' id='inmenus[%loc->value%][%module->value%]' name='inmenus[%loc->value%][%module->value%]' %isinmenu->value% >
+        <label class="col-lg-1" for="inmenus[%loc->value%][%module->value%]" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/m/menu.svg" alt="%inmenu%" >
+        </label>
+    </div>
+ <span><label class="sitemaplabel" ><a target="_blank" href="%path.install->value%/%location->value%" >%location->value% %key->value% </a></label></span>
+
+</div>

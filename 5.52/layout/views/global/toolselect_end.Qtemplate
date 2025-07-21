@@ -1,0 +1,41 @@
+    <script type="text/javascript" >
+        var selectitem ={};
+        var sendfail = false;
+        selectitem.send = function(urlto,fromid,value){
+            $('#ajaxLoader').show();
+            var fd = new FormData();
+                fd.append(fromid,value);
+                ajax.Ajax2visable = $.ajax({
+                    url: urlto,
+                    type: 'POST',
+                    dataType: 'json',
+                    data: fd,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    success: selectitem.ok,
+                    error: selectitem.fail,
+                    timeout: ajax.timeout
+                });
+        };
+        selectitem.ok = function(data) { Ajax2visable = null; };
+        selectitem.fail = function(jQXHR,jQMsg) {
+            ajax.Ajax2visable.abort();
+            Ajax2visable = null;
+        };
+        $(document).ready(function() {
+            $("select").change(function(e){
+                //alert($(this).val());
+                var val = $(this).val();
+                selectitem.send('%path.module->value%?select= ',this.name,val);
+                if(sendfail){
+                   /*if(ischecked) {
+                       $(this).prop('checked', false);
+                   }else{
+                       $(this).prop('checked', true);
+                   }*/
+                   sendfail = false;
+                }
+            })
+        });
+    </script>

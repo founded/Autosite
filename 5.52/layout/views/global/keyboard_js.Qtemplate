@@ -1,0 +1,23 @@
+print '<link href="%layoutpath->value%/keyboard.css" rel="stylesheet" type="text/css" />';
+<script type="text/javascript" >
+	var selectedfield = '';
+	var textselectedfield = '';
+	var iscapslock = false;
+	var isaltgr = false;
+	function keyboardpush(key){
+		if(selectedfield == ''){
+			alert('%no.field.not.select%');
+		}
+    	var afield = document.getElementById(selectedfield); 
+    	textselectedfield = afield.value + key;
+    	afield.value = textselectedfield;
+    }
+    function keyboardbackspace(){
+    	var afield = document.getElementById(selectedfield);
+    	textselectedfield = (afield.value).substring(0,afield.value.length -1);
+    	afield.value = textselectedfield;
+    }
+    function settextselectedfield(fieldname){
+		selectedfield = fieldname;
+	}
+</script>

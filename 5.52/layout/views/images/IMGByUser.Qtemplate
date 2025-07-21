@@ -1,0 +1,5 @@
+<span class="mytoptool" >
+    <a href="./?add" class="btn btn-info pull-right" >%add%</a>
+    <a href="./?MySummary" class="btn btn-info pull-right" >%MySummary%</a>
+    <a href="./?presentation" class="btn btn-info pull-right" >%presentation%</a>
+</span>

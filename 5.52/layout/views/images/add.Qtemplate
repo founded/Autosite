@@ -1,0 +1,36 @@
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="images_category" >%images_gallerys% :</label>   
+    <select name="images_category" size="1" >
+       %images_gallerys->value%
+    </select>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="gallery_access" >%images_access% :</label>
+    <select name="gallery_access" size="1" >
+       %images_accesses->value%
+    </select>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="image" >%file% :</label>
+    <input type="file" accept="image/*" name="image" size="20" capture="camera" />
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="images_name" >%images_name% :</label>
+    <input id="images_name" onclick="settextselectedfield('images_name')" type="text" class="input-sm col-sm-3 text-right" name="images_name" value="%images_name->value%" required />
+</div>
+<center>
+    <div class="onoff" >
+        <input class="checkbox col-lg-1" type="checkbox" id="marking" name="marking" checked="checked" />
+        <label class="col-lg-1" for="marking" >
+            <img  height="15" width="15" src="%path.layout->value%img/icons/c/copyright.svg" alt="%Watermark%" />
+        </label>
+    </div>
+    <div class="onoff" > <!--  checked="checked"-->
+        <input class="checkbox col-lg-1" type="checkbox" id="createcard" name="createcard"  />
+        <label class="col-lg-1" for="createcard" >
+            <img  height="15" width="15" src="%path.layout->value%img/icons/c/card.svg" alt="%card%" />
+        </label>
+    </div>
+</center>
+
+                  

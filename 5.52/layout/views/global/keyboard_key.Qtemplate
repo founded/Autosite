@@ -1,0 +1,1 @@
+<input type="button" value="%keyboardkey->value%" class="keybtn btngrey keylarge" name="%keyboardkey->value%" id="%keyboardkey->value%" onclick="keyboardpush('%keyboardkey->value%')" accesskey="%keyboardkey->value%" title="key %keyboardkey->value%" alt="%keyboardkey->value%" >

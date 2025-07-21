@@ -1,0 +1,3 @@
+<a href="./?template_path=%key->value%" > 
+   %key->value%
+</a>|

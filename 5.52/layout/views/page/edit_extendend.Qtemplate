@@ -1,0 +1,93 @@
+       	<div class="editormenu" >
+	     	<div class="editorbtn" align="left" >
+			   	Layoutfromcss: 
+	        	<select name="Layoutface" >
+	          		<option value="css1" selected="selected" >css1</option>
+	        	</select>
+        		<a class="editorbtn" href="javascript:SelectClass()" id="cssExecute" >%cssExecute%</a> 
+        	</div>
+        </div>
+
+<script type="text/javascript" >
+	function exit1(type){
+		 var convert=0;
+		 window.opener.openUpFile(1, document.form1.file.value);
+		 window.close();
+	}
+	function exit2(){
+		var name=prompt("Enter a form name:","");
+		if(!name) name="some form"
+		var action=prompt("Enter a action:","");
+		if(!action) action="";
+		var method=prompt("Enter a method type:","post");
+		if(!method) method="post";
+		window.opener.insertHTML('<form name="'+name+'" method="'+method+'" action="'+action+'" >Inside form</form>');
+		window.close();
+	}
+	function inputpop(id,title,iwidth,iheight,colour,html){
+		var pwidth=iwidth + 30;
+		var	pheight=iheight + 60;
+		ext_doc = window.open('','htmlname','width=' + pwidth +',height=' +pheight + ',resizable=1,top=50,left=10');		
+       	ext_doc.focus();
+		//ext_doc.document.clear();
+		ext_doc.resizeTo(pwidth, pheight);
+		var varwriter="";
+		var url = "missing.jpg";
+		varwriter+='<html><head><title>'+title+'</title></head>';   
+		varwriter+='<body bgcolor="'+colour+'" ><center>';
+		varwriter+='<img src="'+url+'" border="0" >';
+		var popname = "'flashPop'";
+		varwriter+='<a href="javascript:ok('+popname+');" >ok</a>';
+		varwriter+='<a href="javascript:close('+popname+');" >close</a>';
+		varwriter+='</center></body></html>';
+			ext_doc.document.writeln(varwriter);
+			ext_doc.document.close();
+			ext_doc.focus();
+		varwriter='';
+		opener.document.getElementById(id).value = 'new value';			    
+	}
+	function inputpop2(id,title,iwidth,iheight,colour,htmlurl){
+		showInputPage(htmlurl+"?Rows=" + rowsInTable() + "",330,320);	    
+	}
+var ext_doc ;
+var varwriter='';
+function popimg(url,title,iwidth,iheight,colour) {
+
+}	
+function highLightSyntax(html) {
+		html = html.replace(/@/gi,"_AT_");
+		html = html.replace(/#/gi,"_HASH_");
+		html = html.replace(/&/gi,"&amp;");
+		html = html.replace(/\</gi,"&lt;");
+		html = html.replace(/\>/gi,"&gt;");
+		html = html.replace(/\r\n/gi,"<br>");
+		var htmlregex = /(&lt;[\w\/]+[ ]*[\w\=\"\'\.\/\;\: \)\(-]*&gt;)/gi;
+		html = html.replace(htmlregex,"<span class=A_tag>$1</span>");
+		var htmlregex = /<span class=A_tag>(&lt;IMG[ ]*[\w\=\"\'\.\/\;\: \)\(-]*&gt;)<\/span>/gi;
+		html = html.replace(htmlregex,"<span class=A_img>$1</span>");
+		var htmlregex = /<span class=A_tag>(&lt;[\/]*(form|input){1}[ ]*[\w\=\"\'\.\/\;\: \)\(-]*&gt;)<\/span>/gi;
+		html = html.replace(htmlregex,"<br><span class=A_form>$1</span>");
+		var htmlregex = /<span class=A_tag>(&lt;[\/]*(table|tbody|th|tr|td){1}([ ]*[\w\=\"\'\.\/\;\:\)\(-]*){0,}&gt;)<\/span>/gi;
+		html = html.replace(htmlregex,"<span class=A_table>$1</span>");
+		var htmlregex = /<span class=A_tag>(&lt;\/a&gt;){1}<\/span>/gi;
+		html = html.replace(htmlregex,"<span class=A_A>$1</span>");
+		var htmlregex = /<span class=A_tag>(&lt;a [\W _\w\=\"\'\.\/\;\:\)\(-]+&gt;){1,}<\/span>/gi;
+		html = html.replace(htmlregex,"<span class=A_A>$1</span>");
+		var parameter = /=("[ \w\'\.\/\;\:\)\(-]+"|'[ \w\"\.\/\;\:\)\(-]+')/gi;
+		html = html.replace(parameter,"=<span class=A_paramvalue>$1</span>");
+		var entity = /&amp;([\w]+);/gi;
+		html = html.replace(entity,"<span class=A_entity>&amp;$1;</span>");
+		var comment = /(&lt;\!--[\W _\w\=\"\'\.\/\;\:\)\(-]*--&gt;)/gi;
+		html = html.replace(comment,"<br><span class=A_htmlcomment>$1</span>");
+		html = html.replace(/_AT_/gi,"@");
+		html = html.replace(/_HASH_/gi,"#");
+		return html;	
+	}
+	function setvisible(id){
+		setclass(id,'pannel');
+	}
+	function setinvisible(id){
+		setclass(id,'pannel hidden');
+	}
+	function close(id){setinvisible(id);}
+</script>

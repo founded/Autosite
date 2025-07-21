@@ -1,0 +1,9 @@
+<h1>%Welcome%</h1>
+<span class="p100 lineitem" >
+ <ul class="tabs" >
+    <li><a href="./" class="btn btn-info pull-right" >%support.root%</a></li>
+    <li><a href="./?usersettings" class="btn btn-info pull-right" >%support.usersettings%</a></li>
+    <li><a href="./?workspace" class="btn btn-info pull-right" >%support.follow.up.workspace%</a></li>
+	<li><a href="./?filter" class="btn btn-info pull-right" >%filter%</a></li>
+ </ul> 
+</span>

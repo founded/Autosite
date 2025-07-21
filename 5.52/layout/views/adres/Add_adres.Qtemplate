@@ -1,0 +1,69 @@
+<span>
+    <div class="form-group" >
+       <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="street" >%street%</label>
+          <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="street" id="street" onclick="settextselectedfield('street')" value="%street->value%" />
+          <span class="input_info" >%input_info.street%</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" >
+            <label class="control-label col-lg-3 col-md-3 col-sm-3 " for="houseNumber" >%adres_housenr%</label>
+            <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="houseNumber" id="houseNumber" onclick="settextselectedfield('houseNumber')" value="%houseNumber->value%" />
+            <span class="input_info" >%input_info.housnr%</span>
+        </div>
+    </div>
+    <div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4 " for="postcode" >%postcode%</label>
+            <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="postcode" id="postcode" onclick="settextselectedfield('postcode')" value="%postcode->value%" />
+            <span class="input_info" >%input_info.postcode%</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" >
+            <label class="control-label col-lg-3 col-md-3 col-sm-3 " for="town" >%town%</label>
+            <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="town" id="town" onclick="settextselectedfield('town')" value="%town->value%" required />
+            <span class="input_info" >%input_info.required%:%input_info.town%</span>
+        </div>
+    </div>
+    <div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="city" >%city%</label>
+          <input type="text" class="input-sm col-sm-3 text-right" name="city" id="city" id="city" onclick="settextselectedfield('city')" value="%city->value%"  />
+          <span class="input_info" >%input_info.city%</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" >
+            <label class="control-label col-lg-3 col-md-3 col-sm-3 " for="state" >%state%</label>
+            <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="state" id="state" onclick="settextselectedfield('state')" value="%state->value%" />
+            <span class="input_info" >%input_info.state%</span>
+        </div>
+    </div>
+    <div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="country" >%country%</label>
+          <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="country" id="country" onclick="settextselectedfield('country')" value="%country->value%" required />
+          <span class="input_info" >%input_info.required%:%input_info.country%</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" >
+            <label class="control-label col-lg-3 col-md-3 col-sm-3 " for="adres" >%adres%</label>
+            <input type="text" class="input-sm col-sm-3 text-right" name="adres" id="adres" onclick="settextselectedfield('adres')" value="%adres->value%" />
+            <span class="input_info" >%input_info.adres%</span>
+        </div>
+    </div>
+    <div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+            <label class="control-label col-lg-4 col-md-4 col-sm-4" for="adres_E" >%adres_E%</label>
+            <input type="text" class="input-sm col-sm-3 text-right" name="adres_E" id="adres_E" onclick="settextselectedfield('adres_E')" value="%adres_E->value%" />
+            <span class="input_info" >%input_info.adres_E%</span>
+        </div>    
+    </div>
+    <div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="gpslat" >%adres_lat% </label>
+          <input type="text" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" name="gpslat" onclick="settextselectedfield('gpslat')" id="gpslat" value="%gpslat->value%" />
+          <span class="input_info" >%input_info.lat%</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3" >
+            <label class="control-label col-lg-3 col-md-3 col-sm-3 " for="gpslng" >%adres_lng%</label>
+          <input type="text" class="input-sm col-lg-2 col-sm-3 text-right" name="gpslng" id="gpslng" onclick="settextselectedfield('gpslng')" value="%gpslng->value%" />
+          <span class="input_info" >%input_info.lng%</span>
+        </div>
+    </div>
+</span>

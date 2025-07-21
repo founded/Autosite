@@ -1,0 +1,90 @@
+/**
+*/
+#editor{width:95%; height:100%;}
+#editorfoot{z-index:80;}
+#editor .foot{z-index:80;padding:20px 5px 5px 15px;}
+#editormenu{position:absolute; left:25px; z-index:80; background:#565656;font: 8px/10px Helvetica, sans-serif;}
+#editor input{}
+#statusOfWebMaker {float:right;}
+#editERROR{} 
+/*
+*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<menu>>>>>>>>>>>>>>>>>>>>
+*/
+.editoroption{display: inline-block;padding: 2px;}
+.editormnu{}
+.editorbtn{min-width:30px;padding:20px 5px 5px 15px; line-height:40px; margin:0;  display: inline;
+          font-size:12px}
+.editorbtn div:hover{}
+.ERROR{background:#FFCC00; border: 2px solid #FF6600;z-index:99;}
+.Manipulated{background:#FFCC00; border: 2px solid #FF6600;z-index:99;}
+.Source{	background-color:#FFFFFF; border:3px solid #0066FF; width:100%; height:100%;
+			z-index:80;		 float:left;
+}
+/*
+*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pannels>>>>>>>>>>>>>>>>>>>>
+*!important! to good visible editor panel 
+*/
+
+#Editorpanel{ margin-left:25px; padding-left: 10px;	float:left; height:100px;  min-height:400px; overflow-y: scroll
+}
+#Sourcepanel{ margin-left:25px; padding-left: 10px;  min-width:600px; height:400px; min-height:400px; overflow-y: scroll
+			 	float:left;
+}
+#Editorfoot{	background-color:#707070; border:3px solid #000;
+			 	overflow:visible; word-wrap:break-word ;
+			 	display:block; position: fixed; right:150px; bottom:90px;
+       			height: 150px; width:55px; padding:2px ; z-index:99;
+			 	float: right;
+			 	line-height:20px;   display: inline;
+                font-size:16px
+}
+.Apanel{background-color:#FFFFFF; border:3px solid #FF6600;
+		overflow:visible; word-wrap:break-word ;z-index:80; width:80%;
+}
+#Centralpanel{	background-color:#FFFFFF; border:3px solid #FF6600; width:10%; height:100%; min-height:60%;
+			 	overflow:visible; word-wrap:break-word ;z-index:80;
+			 	float:left;
+}
+
+
+.afterpanel{  position:absolute;top:0;left:0;width:80%;height:100%;
+              background-color:black;z-index:90;
+}
+.pannel{display:block;	position:absolute;width:500px;height:300px;
+			top:50%;left:50%;background-color:#FFFF99;margin-left:250px;margin-top:-150px;
+			z-index:99;border: 2px solid #FF6600;
+}
+/*
+*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Buttons>>>>>>>>>>>>>>>>>>>>
+*/
+.hidden{visibility:hidden; height:0px;width:0px;} 
+.cut{background:  url(../img/editor/cut.gif) 0 0 no-repeat;height:1px;}
+ 
+
+.open{background:  url(../img/editor/load.gif) 0 0 no-repeat;}
+.save{background:  url(../img/editor/save.gif) 0 0 no-repeat;}
+.copy{background:  url(../img/editor/copy.gif) 0 0 no-repeat;height:1px;}
+
+.paste{background:  url(../img/editor/paste.gif) 0 0 no-repeat;}
+.bold{background:  url(../img/editor/bold.gif) 0 0 no-repeat;}
+.underline{background:  url(../img/editor/underline.gif) 0 0 no-repeat;}
+.strike{background:  url(../img/editor/strike.gif) 0 0 no-repeat;}
+.removeFormat{ 	background:  url(../img/editor/removeFormat.gif) 0 0 no-repeat;}
+.left{background:  url(../img/editor/left.gif) 0 0 no-repeat;}
+.center{background:  url(../img/editor/center.gif) 0 0 no-repeat;}
+.right{background:  url(../img/editor/right.gif) 0 0 no-repeat;}
+.ileft{background:  url(../img/editor/ileft.gif) 0 0 no-repeat;}
+.iright{background:  url(../img/editor/iright.gif) 0 0 no-repeat;}
+.link{background:  url(../img/editor/link.gif) 0 0 no-repeat;}
+.unlink{background:  url(../img/editor/unlink.gif) 0 0 no-repeat;}	
+.rule{background:  url(../img/editor/rule.gif) 0 0 no-repeat;}
+.fore{background:  url(../img/editor/fore.gif) 0 0 no-repeat;}
+.back{background:  url(../img/editor/back.gif) 0 0 no-repeat;}
+.bullets{background:  url(../img/editor/bullets.gif) 0 0 no-repeat;}
+.ordlist{background:  url(../img/editor/ordlist.gif) 0 0 no-repeat;}
+.form{background:  url(../img/editor/form.gif) 0 0 no-repeat;}
+.symbol{background:  url(../img/editor/symbol.gif) 0 0 no-repeat;}
+.image{background:  url(../img/editor/image.gif) 0 0 no-repeat;}
+.flash{background:  url(../img/editor/flash.gif) 0 0 no-repeat;}
+.addHTML{background:  url(../img/editor/addHTML.gif) 0 0 no-repeat;}
+.table{background:  url(../img/editor/table.gif) 0 0 no-repeat;}

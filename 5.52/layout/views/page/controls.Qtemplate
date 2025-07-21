@@ -1,0 +1,11 @@
+<span class="controls p100" >
+ <a class="auctionitem" href="%path.install->value%/images/IMGByUser/?bind=page&nr=%ThePage->value%" >
+  <img width="30" height="30" alt="%addimages%" src="%path.layout->value%img/icons/i/image.svg" >
+ </a>
+ <a class="auctionitem" href="%path.install->value%/page/PagesSummary/?edit=%ThePage->value%" >
+  <img width="27" height="27" alt="%edit%" src="%path.layout->value%img/icons/e/edit.svg" >
+ </a>
+ <a class="auctionitem" href="%path.install->value%/page/PagesSummary/?translate=%ThePage->value%" >
+  <img width="27" height="27" alt="%translate%" src="%path.layout->value%img/icons/l/library2.svg" >
+ </a>
+</span>

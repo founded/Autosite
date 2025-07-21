@@ -1,0 +1,9 @@
+<div class="pagin paginator" >
+ <a href="%path.url->value%?page=%paginfirst->value%%param->value%" class="%canIprev->value%" >
+  <span><img src="%path.layout->value%img/icons/f/first.svg" class="icon" ></span>
+  <span>%first%</span>
+ </a>
+ <a href="%path.url->value%?page=%paginprev->value%%param->value%" class="%canIprev->value%" >
+  <span><img src="%path.layout->value%img/icons/p/prev.svg" class="icon" ></span>
+  <span>%prev%</span>
+ </a>

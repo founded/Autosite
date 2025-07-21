@@ -1,0 +1,10 @@
+<section id="%id->value%" >
+  <a href="%url->value%" > 
+    <span class="checked" >
+      <h1>%title->value%</h1>
+      <label>
+        <img height="15" width="15" src="%path.layout->value%img/icons/a/add.svg" alt="%alt.detail%" />
+      </label>
+    </span>
+  </a>
+<br></br>

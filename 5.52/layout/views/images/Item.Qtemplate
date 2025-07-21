@@ -1,0 +1,17 @@
+<div id="galleryitem" >
+    <time>%image_time->value%</time>
+    <figure>
+        <img src="%path.install->value%%urlto->value%" width="150" height="150" />
+        <figcaption> %name%:%namekey->value% </figcaption>
+    </figure>
+    <meter></meter>
+    <a class="auctionitem" href="%path.install->value%/images/IMGTransform/?images_id=%id->value%" >
+      <img height="20" width="20" src="%path.layout->value%img/icons/e/edit.svg" alt="%delete%" >
+    </a>
+    <a class="auctionitem" href="./?delete=%id->value%" >
+      <img height="20" width="20" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+    </a>
+    <a class="auctionitem" href="./?edit=%id->value%" >
+      <img height="20" width="20" src="%path.layout->value%img/icons/e/eye.svg" alt="%edit%" >
+    </a>
+</div>

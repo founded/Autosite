@@ -1,0 +1,23 @@
+<div class="tegel equally" onmouseover="mytooltip_show('tooltip-%i->value%','item-%i->value%');" onmouseout="mytooltip_hide('tooltip-%i->value%');" >
+ <h3>%Database->value% </h3>
+ <h3></h3>
+  <div id="item-%i->value%" class="info" >
+   moreinfo follow
+  </div>
+  <h3>---</h3>
+    <div id="item-%i->value%" class="info" >
+     <a href="./?database=%Database->value%&addtable" >
+        [add]
+     </a>
+
+     <a href="./?database=%Database->value%" alt="%enter.database% %Database->value%" >
+        [view]
+     </a>
+  </div>
+  <div id="tooltip-%i->value%" class="mytooltip equally" ><!--visual hidden-->
+  <fieldset class="tools" >
+       test
+   <legend>%tools%</legend>
+  </fieldset>
+  </div>
+</div>

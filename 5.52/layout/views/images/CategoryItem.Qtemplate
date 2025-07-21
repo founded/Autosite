@@ -1,0 +1,4 @@
+<tr>
+    <td><img src="%layoutpath->value%icons/r/right.svg" class="svg global" height="10" width="10" alt="%alt.nomsg%" /></td>
+    <td><a href="./?category=%id->value%" >%label->value%</a></td>
+</tr>

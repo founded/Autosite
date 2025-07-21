@@ -1,0 +1,7 @@
+<div class="pagin" >
+ <a href="%path.url->value%?page=%paginfirst->value%" class="%canIprev->value%" >%first%</a>
+ <a href="%path.url->value%?page=%paginprev->value%" class="%canIprev->value%" >%prev%</a>
+ <a href="%path.url->value%?page=%paginnr->value%" >[%paginnr->value%]</a>
+ <a href="%path.url->value%?page=%paginnext->value%" class="%canInext->value%" >%next%</a>
+ <a href="%path.url->value%?page=%paginlast->value%" class="%canInext->value%" >%last%</a>
+</div>

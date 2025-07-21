@@ -1,0 +1,9 @@
+ <a href="%path.url->value%?page=%paginnext->value%%param->value%" class="%canInext->value%" >
+  <span>%next%</span>
+  <span><img src="%path.layout->value%img/icons/n/next.svg" class="icon" ></span>
+ </a>
+ <a href="%path.url->value%?page=%paginlast->value%%param->value%" class="%canInext->value%" >
+  <span>%last%</span>
+  <span><img src="%path.layout->value%img/icons/l/last.svg" class="icon" ></span>
+ </a>
+</div>

@@ -1,0 +1,67 @@
+</br>
+<section id="info" >
+    <div class="details %STATUS->value%" >  
+        <h3>%url->value%</h3>
+        <div class=" %STATUS->value%" id="item-1" >%info->value%</div>
+        <h3>%lastrun->value%</h3>
+        <a href="%path.install->value%/start/CronsMod/?cron=%id->value%" >%detail%</a>
+        <h3>%REPETITION->value%/%STATUS->value%</h3>
+        <span class="checked " >
+            <input class="checkbox" id="cronfollow[%id->value%]" type="checkbox" name="cronfollow[%id->value%]" %isfollow->value% >
+            <label for="cronfollow[%id->value%]" >
+                <img src="%path.layout->value%img/icons/e/eye.svg" alt="%isfollow%" width="15" height="15" >
+            </label>
+        </span>
+        <span class="checked" >
+            <input class="checkbox" id="cronenabled[%id->value%]" type="checkbox" name="cronenabled[%id->value%]" %isenabled->value% >
+            <label for="cronenabled[%id->value%]" >
+                <img src="%path.layout->value%img/icons/g/gear.svg" alt="%isenabled%" width="15" height="15" >
+            </label>
+        </span>
+        <span class="checked" >
+            <input class="checkbox" type="checkbox" id="cronlogit[%id->value%]" name="cronlogit[%id->value%]" %islogit->value% >
+            <label for="cronlogit[%id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/d/doc-text.svg" alt="%islogit%" >
+            </label>
+        </span>
+        <span>
+            <a href="./?cron=%id->value%&addparam" class="btn btn-info pull-right" >%addparam%</a>
+        </span>
+        <br> 
+    </div>
+
+   <span class="fixedtopright" >
+  <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50mm" height="50mm" >
+  <defs>
+    <linearGradient id="LGradient1" x1="11.997338" y1="881.02124" x2="8.0987701" y2="896.02124" gradientUnits="userSpaceOnUse" >
+      <stop id="stop6058" offset="0" style="stop-color:#0000ab;stop-opacity:1;" >
+      <stop id="stop6060" offset="1" style="stop-color:#0000ab;stop-opacity:0;" >
+    </linearGradient>
+    <linearGradient id="LGradient2" x1="167.61414" y1="1025.2411"  x2="163.86783" y2="1057.3839" gradientUnits="userSpaceOnUse" >
+      <stop style="stop-color:#000079;stop-opacity:1;" offset="0" id="stop6066" >
+      <stop style="stop-color:#000079;stop-opacity:0;" offset="1" id="stop6068" >
+    </linearGradient>
+    <radialGradient id="radialGradient6195" cx="100.18626" cy="980.19385" fx="100.18626" fy="980.19385" r="170.62582" gradientTransform="matrix(0.29156533,0.31168074,-0.16491861,0.15200448,223.08242,772.48217)" gradientUnits="userSpaceOnUse" >
+      <stop style="stop-color:#fffcf2;stop-opacity:0.72948331" offset="0" id="stop6125" >
+      <stop style="stop-color:#fffcd8;stop-opacity:0.28267476" offset="1" id="stop6127" >
+    </radialGradient>
+  </defs>
+  <g transform="translate(0,-875.19678)" >
+    <path d="M 13.674958,1038.6909 Z" id="path4817" />
+    <path style="opacity:0.70099996;fill:#000079;stroke:#0000dc;" d="m 4.8912056,877.16679 c 47.5280884,0.50507 48.0391424,0.50507 48.0391424,0.50507 l 121.311612,119.6358 0.51106,47.98054 z" />
+    <path style="fill:url(#LGradient1);stroke:#000013;" d="m 20.174609,892.41018 c -6.71206,0.0446 -13.2119315,0.0136 -13.2119315,0.0136 -1.3544846,-2.32135 -7.74425248,-16.98815 -2.0447875,-15.07915 0.884813,0.29636 15.256717,15.23069 15.256717,15.23069" />
+    <path style="fill:url(#LGradient2);stroke:#000000;" d="m 159.38022,1030.9002 c 6.09605,6.3097 15.32423,15.171 15.32423,15.171 1.39721,5.3229 -15.30403,4.2553 -15.30403,4.2553 l -0.0584,-19.4153" />
+    <path style="opacity:0.7;fill:url(#radialGradient6195);" d="m 5.331379,877.54608 c 46.32608,0.49445 47.653726,0.44121 47.653726,0.44121 l 119.535615,117.8651 c 1.64773,1.67653 1.67095,1.36385 1.65999,3.69949 -0.005,0.97262 0.0836,33.52632 0.16934,45.73402 z" />
+  </g>
+  <defs>
+      <path id="pathright" d="M 32 21  600 572" fill="none"  />     
+  </defs>
+  <use xlink:href="#pathright" fill="none" stroke="none"/>
+  <text font-family="sans-serif" font-size="21" >
+    <textPath xlink:href="#pathright" startOffset="15" >
+       <tspan fill="#eeeeee" >*** %REPETITION->value% ***</tspan>
+    </textPath>
+  </text>
+</svg>
+</span>
+</section>

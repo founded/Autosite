@@ -1,0 +1,43 @@
+<div class=" %row->value%" id="upaintingitem-%i->value%"  >
+   <table>
+        <tr>
+        	<td> <a href="./?painting=%product_id->value%" >%thumb->value%</a></td>
+        	<td></td>
+            <td> <a href="./?painting=%product_id->value%" ><h2>%name->value%</h2>  <br></a>
+                 <div id="parameter" >%parameters->value%</div>  <br>
+                <a href="./?filter&group=%group_id->value%" >%group% : %groupnames->value%</a>
+               <br>
+                  <div class="onoff" >
+                    <input class="checkbox col-lg-1" type="checkbox" id="ENABLED[%id->value%]" name="ENABLED[%id->value%]" %isenabled->value% />
+                    <label class="col-lg-1" for="ENABLED[%id->value%]" >
+                        <img height="15" width="15" src="%path.layout->value%img/icons/e/eject.svg" alt="%enabled%" />
+                    </label>
+                  </div>
+                  <div class="onoff" >
+                    <input class="checkbox col-lg-1" type="checkbox" id="PROMOTE[%id->value%]" name="PROMOTE[%id->value%]" %ispromote->value% />
+                    <label class="col-lg-1" for="PROMOTE[%id->value%]" >
+                        <img height="15" width="15" src="%path.layout->value%img/icons/f/favorite.svg" alt="%promote%" />
+                    </label>
+                  </div>
+                  <div class="onoff" >
+                    <input class="checkbox col-lg-1" type="checkbox" id="VISIBLE[%id->value%]" name="VISIBLE[%id->value%]" %isvisible->value% />
+                    <label class="col-lg-1" for="VISIBLE[%id->value%]" >
+                        <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%visible%" />
+                    </label>
+                  </div>
+                  <br>
+                  <a class="paintingitem" href="%path.install->value%/images/IMGByUser/?bind=paint_catalog&nr=%id->value%" >
+                      <img height="30" width="30" src="%path.layout->value%img/icons/i/image.svg" alt="%addpainting%" />
+                  </a>
+                  <a href="./?onmywall=%backgroundwal_id->value%" >on my wall </a>
+                  %imputdate->value%
+              </td>
+              <td>  <select name="groupselection[%id->value%]" size="6" multiple >
+                    %selectgroups->value%
+                    </select>
+             </td>
+        </tr>
+    </table>
+
+</div>
+  

@@ -1,0 +1,1 @@
+%keyname->value% : <a href="./?filter&parameter[%parameter_id->value%]=%value->value%" >%value->value%</a>

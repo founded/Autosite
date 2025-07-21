@@ -1,0 +1,44 @@
+var ajax = {
+    Aob: null,
+    oncall: false,
+    timeout: 1200
+};//120
+ajax.reset = function() {
+    Aob = null;
+    ajax.oncall = false;
+};
+//js imageshow
+var index;
+var picArray = [];
+function init(){
+    BrowserOK = fotoOK();
+    gekozenfoto = 0;
+    setInterval("volgendefotos()",intervaltijd * 1000);
+}
+function fotoOK() {//foto ok?
+	if (document.images)	return true;
+	else return false;
+}
+function laadfoto(fotoURL,id) {
+	if (BrowserOK) {
+		if (document.all){
+			document.getElementById(id).style.filter="blendTrans(duration=2)";
+			document.getElementById(id).style.filter="blendTrans(duration=fadetijd)";
+			document.getElementById(id).filters.blendTrans.Apply();
+		}
+		document.fotoshow.src = fotoURL;
+		if (document.all){
+			document.getElementById(id).filters.blendTrans.Play();
+		}
+		return false;
+	}
+	else {
+		return true;
+	}}
+function volgendefotos(id){
+    for	(index = 0; index < picArray.length; index++) {
+        text += picArray[index];
+        gekozenfoto = (gekozenfotos + 1) % aantalfotos;
+	    laadfoto(fotos[gekozenfoto],id);
+    }
+}

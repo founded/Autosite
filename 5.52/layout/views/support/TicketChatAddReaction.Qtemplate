@@ -1,0 +1,23 @@
+<li>
+    <div class="%chattxt->value%" >
+        <div class="form-group" >
+            <label class="control-label col-lg-5 col-md-5 col-sm-5" for="try2follow_reactions%id->value%_alt" >%ticket.follow.reaction% :</label>
+            <div class="onoff" >
+                <input class="checkbox col-lg-1 col-md-1" type="checkbox" id="try2follow_reactions%id->value%" name="try2follow_reactions%id->value%" />
+                <label class="col-lg-1" for="try2follow_reactions%id->value%" >
+                    <img height="15" width="15" src="%path.layout->value%img/icons/f/favorite.svg?color=#f00" alt="%favorite%" />
+                </label>
+            </div>
+        </div>
+        <div class="form-group" >
+            <fieldset>
+                <legend>
+                    <label class="control-label col-lg-6 col-md-4 col-sm-4" for="reaction_detail" >%comment%</label>
+                </legend>
+                <span class="col-lg-12" >
+                    <textarea cols="65" rows="7" wrap="virtual" class="form-control" name="reaction_detail" id="reaction_detail" >%reaction_detail->value%</textarea>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+</li>

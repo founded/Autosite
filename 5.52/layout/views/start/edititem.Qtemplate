@@ -1,0 +1,14 @@
+<div class="%STATUS->value% col-lg-12 col-md-6 col-sm-6 col-xs-12" >
+ <span class="col-lg-12 col-md-12 col-sm-10 col-xs-10" > 
+  <h4> %version->value% %MENU->value% </h4>
+ </span>
+ <span class="col-lg-12 col-md-12 col-sm-10 col-xs-10 %row->value%" >
+   <a class="auctionitem" href="./?view=%id->value%" >
+    <span class="col-lg-2 col-md-12 col-sm-10 col-xs-10" >
+     %key->value% %location->value% %PUBLIC->value%
+    </span>
+    <span class="col-lg-4 col-md-12 col-sm-10 col-xs-10" >%TYPE->value%</span>
+   </a>
+   <span class="col-lg-2 col-sm-8 col-sm-10 col-xs-10" >%imputDate->value%</span>
+ </span>
+</div>

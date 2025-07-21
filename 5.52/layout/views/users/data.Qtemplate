@@ -1,0 +1,33 @@
+<h1>%user.login.data%</h1>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="username" >%username% :</label>
+    <input id="username" onclick="settextselectedfield('username')" type="text" class="input-sm col-sm-4 text-right" name="username" value="%username->value%" required >
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="email" >%email% :</label>
+    <input id="email" onclick="settextselectedfield('email')" type="email" class="input-sm col-sm-4 text-right" name="email" value="%email->value%" required >
+</div>
+<a href="%path.install->value%/users/ContactInfo/?add_Phone" >
+    <span class="checked " >
+    <h1>%user.Phone.data%</h1>
+        <label for="email" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/a/add.svg" alt="%alt.add.tel%" />
+        </label>
+    </span>
+</a>
+<br>
+<br>
+%phones->value%
+<br>
+<a href="%path.install->value%/adres/LocationDetail/?add_adres" >
+    <span class="checked" >
+    <h1>%user.adres.data%</h1>
+        <label for="adres" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/a/add.svg" alt="%alt.add.adres%" />
+        </label>
+    </span>
+</a>
+<br>
+<br>%alt.add.adres%
+%adresses->value%
+<br>

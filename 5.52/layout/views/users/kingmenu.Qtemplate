@@ -1,0 +1,9 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        <li><a href="%path.install->value%/start/Install/" class="btn btn-info pull-right" >%install%</a></li>
+        <li><a href="%path.install->value%/images/GalleryManage/" class="btn btn-info pull-right" >%not.follow%</a></li>
+        <li><a href="%path.install->value%/search/FoundPages/" class="btn btn-info pull-right" >%foundpages%</a></li>
+        <li><a href="%path.install->value%/page/PagesSummary/" class="btn btn-info pull-right" >%webpages%</a></li>
+        <li><a href="%path.install->value%/users/UserStats/" class="btn btn-info pull-right" >%stads%</a></li>
+    </ul>
+</span>

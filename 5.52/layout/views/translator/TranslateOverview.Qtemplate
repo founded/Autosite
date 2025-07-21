@@ -1,0 +1,11 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        	<li><a href="./?summary" class="btn btn-info pull-right" >%summary%</a></li>
+        	<li><a href="./?onlyempty" class="btn btn-info pull-right" >%onlyempty%</a></li>
+        	<li><a href="./?cleannotfound" class="btn btn-info pull-right" >%cleannotfound%</a></li>
+        	<li><a href="./?search" class="btn btn-info pull-right" >%search%</a></li>
+        	<li><a href="./?notfound" class="btn btn-info pull-right" >%notfound%</a></li>
+        	<li><a href="./?allnotfound" class="btn btn-info pull-right" >%allnotfound%</a></li>        	
+        	<li><a href="./?NeedTranslateASAP" class="btn btn-info pull-right" >%NeedTranslateASAP%</a></li>
+    </ul> 
+</span>

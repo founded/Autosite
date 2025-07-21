@@ -1,0 +1,9 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        	<li><a href="./?activate&key=%key->value%" class="btn btn-info pull-right" >%activate%</a></li>
+        	<li><a href="./?deactivate&key=%key->value%" class="btn btn-info pull-right" >%deactivate%</a></li>
+        	<li><a href="./?cleardata&key=%key->value%" class="btn btn-info pull-right" >%cleardata%</a></li>
+        	<li><a href="./?ask&key=%key->value%" class="btn btn-info pull-right" >%question%</a></li>
+    </ul> 
+</span>
+<h3>%message->value%</h3>

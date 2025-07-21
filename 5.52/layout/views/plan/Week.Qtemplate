@@ -1,0 +1,5 @@
+<span class="p100 lineitem plannav" >
+&gt; <a href="%path.install->value%/plan/Callendar/?year=%Y->value%&month=%m->value%" class="content plannav" >%month%</a>
+&gt; <a href="./?year=%Y->value%&weeknr=%weeknr->value%" class="content plannav" >%week%</a></li>
+&gt;
+</span>

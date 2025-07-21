@@ -1,0 +1,5 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        	<li><a href="./?addcategory" class="btn btn-info pull-right" >%amail.boxcleaner.addfiltercategory%</a></li>
+    </ul>
+</span>

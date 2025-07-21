@@ -1,0 +1,173 @@
+.expander{
+    display: inline-block;
+}
+.directory{
+    display: inline-block;
+}
+.file{
+    display: inline-block;
+}
+.level1{
+    padding: 2px 2px 2px 25px;
+}
+.level2{
+    padding: 2px 2px 2px 50px;
+}
+.level3{
+    padding: 2px 2px 2px 75px;
+}
+.level4{
+    padding: 2px 2px 2px 100px;
+}
+.level5{
+    padding: 2px 2px 2px 125px;
+}
+.level6{
+    padding: 2px 2px 2px 150px;
+}
+
+#database .tegel{     
+    display: inline-block;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    width: 230px;
+    text-align: center;
+}
+#database .info{     
+   color: #000;
+   font-weight: bold;
+}
+#database h3{
+    background-color:#808080;
+    color: #eee;
+    padding: 7px 0px;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #777;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+
+.attention{
+    margin:15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+# //--> consolde
+/*html{font-family:sans-serif;
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%
+            }
+            body{margin:0}*/
+
+#consol abbr[title]{border-bottom:1px dotted}
+#consol b strong{font-weight:700}
+#consol dfn{font-style:italic}
+#consol h1{font-size:2em;margin:.67em 0}
+#consol mark{background:#ff0;color:#000}
+#consol small{font-size:80%}
+#consol sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+#consol sup{top:-.5em}
+#consol sub{bottom:-.25em}
+#consol img{border:0}
+#consol svg:not(:root){overflow:hidden}
+#consol figure{margin:1em 40px}
+#consol hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+#consol pre{overflow:auto}
+#consol code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+#consol button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+#consol button{overflow:visible}
+#consol button,select{text-transform:none}
+#consol button,
+#consol html input[type=button],
+#consol input[type=reset],
+#consol input[type=submit]{-webkit-appearance:button;cursor:pointer}
+#consol button[disabled],
+#consol html input[disabled]{cursor:default}
+#consol button::-moz-focus-inner,
+#consol input::-moz-focus-inner{border:0;padding:0}
+#consol input{line-height:normal}
+#consol input[type=checkbox],
+#consol input[type=radio]{box-sizing:border-box;padding:0}
+#consol input[type=number]::-webkit-inner-spin-button,
+#consol input[type=number]::-webkit-outer-spin-button{height:auto}
+#consol input[type=search]{
+    -webkit-appearance:textfield;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box}
+#consol input[type=search]::-webkit-search-cancel-button,
+#consol input[type=search]::-webkit-search-decoration{
+    -webkit-appearance:none}
+#consol fieldset{
+    border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+#consol legend{
+    border:0;padding:0}
+#consol textarea{
+    overflow:auto}
+#consol optgroup{
+    font-weight:700}
+#consol table{
+    border-collapse:collapse;border-spacing:0}
+#consol td,th{padding:0}
+#consol .terminal .cmd .format,.terminal .cmd .prompt,.terminal .cmd .prompt div,
+#consol .terminal .terminal-output .format,.terminal .terminal-output div div{
+    display:inline-block}
+#consol .terminal .clipboard{
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity:.01;
+    filter:alpha(opacity=.01);
+    filter:alpha(opacity=.01);
+    width:2px}.cmd>.clipboard{position:fixed}
+#consol .terminal{
+    padding:10px;position:relative;overflow:hidden}
+#consol .cmd{
+    padding:0;margin:0;height:1.3em}
+#consol .terminal .prompt,
+#consol .terminal .terminal-output div div{display:block;height:auto}
+#consol .terminal .prompt{float:left}
+#consol .terminal{
+    background-color:#000}
+#consol .terminal-output>div{min-height:14px}
+#consol .terminal .terminal-output div span{
+    display:inline-block}
+#consol .terminal .cmd span{
+    float:left}
+#consol .terminal .cmd span.inverted{
+    background-color:#aaa;color:#000}
+#consol .terminal .terminal-output div div a::-moz-selection,
+#consol .terminal .terminal-output div div::-moz-selection,
+#consol .terminal .terminal-output div span::-moz-selection{
+    background-color:#aaa;color:#000}
+#consol .terminal .cmd>span::selection,.terminal .prompt span::selection,
+#consol .terminal .terminal-output div div a::selection,
+#consol .terminal .terminal-output div div::selection,
+#consol .terminal .terminal-output div span::selection{
+    background-color:#aaa;color:#000}
+#consol .terminal .terminal-output div.error,
+#consol .terminal .terminal-output div.error div{
+    color:red}
+#consol .tilda{position:fixed;top:0;left:0;width:100%;z-index:1100}
+#consol .clear{clear:both}
+#consol .terminal body{background-color:#000}
+#consol .terminal,
+#consol .terminal .prompt,
+#consol .terminal .terminal-output div div,body{
+    color:#ccc;font-family:monospace,fixed;
+    font-size:15px;line-height:18px}
+#consol .terminal a,
+#consol .terminal a:hover,
+a,
+a:hover{color:#6c71c4}.spaced{margin:15px 0}
+#consol .spaced-top{margin:15px 0 0}
+#consol .spaced-bottom{margin:0 0 15px}
+#consol .configure{margin:20px}
+#consol .configure
+#consol .variable{color:#d33682}
+#consol .configure p,
+#consol .configure ul{margin:5px 0 0}

@@ -1,0 +1,345 @@
+.keybtn{
+  font-size: 40px;
+  line-height: inherit;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  padding: 5px 15px;
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 0 5px #dddddd, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #223344;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-family:  "Liberation Mono", "Courier New", monospace;
+  font: bold;
+  text-align: left;
+  transform: translate3d(0, 0, 5px);
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+.keybtn::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -9px;
+  left: -0.3125rem;
+  right: -0.3125rem;
+  top: -3px;
+  transform: translate3d(0, 0, -3px);
+}
+.keybtn::after {
+  border-color: #cccccc;
+}
+.btnexit {
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 0 5px #ee7788, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #ffffff;
+}
+.btnexit::after {
+  border-color: #eb8c95;
+}
+.btngrey {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 0 5px #ccdddd, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #ffffff;
+  border-color: #ccddee;
+  color: #223344;
+}
+.btngrey::after {
+  border-color: #bdc6d0;
+}
+.keylarge {
+  font-size: 25px;
+  line-height: 50px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 8px;
+  margin-top: 10px;
+  padding: 3px 50px 40px  15px;
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 0 5px #dddddd, 0 6px #dddddd, 0 7px #dddddd, 0 8px #dddddd, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #223344;
+}
+.keylarge::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -13px;
+  left: -0.375rem;
+  right: -0.375rem;
+  top: 3px;
+  transform: translate3d(0, 0, -8px);
+}
+.keylarge::after {
+  border-color: #cccccc;
+}
+.keylarge.btnexit {
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 0 5px #ee7788, 0 6px #ee7788, 0 7px #ee7788, 0 8px #ee7788, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #ffffff;
+}
+.keylarge.btnexit::after {
+  border-color: #eb8c95;
+}
+.keylarge.btngrey {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 0 5px #ccdddd, 0 6px #ccdddd, 0 7px #ccdddd, 0 8px #ccdddd, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #ffffff;
+  border-color: #ccddee;
+  color: #223344;
+}
+.keylarge.btngrey::after {
+  border-color: #bdc6d0;
+}
+.keybtn::after {
+  border-style: solid;
+  box-sizing: content-box;
+  content: '';
+  display: block;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+a.keybtn{
+  text-decoration: none;
+}
+a.keybtn:hover, a.keybtn:focus {
+  text-decoration: none;
+}
+button.keybtn,
+a.keybtn{
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.6875rem;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  margin-top: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 0 5px #dddddd, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #223344;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+button.keybtn:active, button.keybtn.active,
+a.keybtn:active,
+a.keybtn.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 5px, 0);
+}
+button.keybtn:active::after, button.keybtn.active::after,
+a.keybtn:active::after,
+a.keybtn.active::after {
+  transform: translate3d(0, -5px, 0);
+}
+button.keybtn::after,
+a.keybtn::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -10px;
+  left: -0.3125rem;
+  right: -0.3125rem;
+  top: 0px;
+  transform: translate3d(0, 0, -5px);
+}
+button.keybtn:hover, button.keybtn:focus, button.keybtn.hover, button.keybtn.focus,
+a.keybtn:hover,
+a.keybtn:focus,
+a.keybtn.hover,
+a.keybtn.focus {
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #e6e6e6;
+  color: #223344;
+}
+button.keybtn::after,
+a.keybtn::after {
+  border-color: #cccccc;
+}
+button.btnexit,
+a.btnexit {
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 0 5px #ee7788, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #ffffff;
+}
+button.btnexit:hover,
+a.btnexit:hover{
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #e4606d;
+  color: #ffffff;
+}
+button.btnexit:active, button.btnexit.active,
+a.btnexit:active,
+a.btnexit.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #ffffff;
+}
+button.btnexit::after,
+a.btnexit::after {
+  border-color: #eb8c95;
+}
+button.btngrey,
+a.btngrey {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 0 5px #ccdddd, 2px 2.5px 4px #adb5bd, 0 -1px 2.5px #adb5bd;
+  background-color: #ffffff;
+  border-color: #ccddee;
+  color: #223344;
+}
+button.btngrey:hover, button.btngrey:focus, button.btngrey.hover, button.btngrey.focus,
+a.btngrey:hover,
+a.btngrey:focus,
+a.btngrey.hover,
+a.btngrey.focus {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 2px 2px 4px #adb5bd, 0 -1px 2px #adb5bd;
+  background-color: #ccddee;
+  color: #223344;
+}
+button.btngrey:active, button.btngrey.active,
+a.btngrey:active,
+a.btngrey.active {
+  background-color: #ccddee;
+  box-shadow: 0 0 1px 1px #99aabb;
+  color: #223344;
+}
+button.btngrey::after,
+a.btngrey::after {
+  border-color: #bdc6d0;
+}
+button.keylarge,
+a.keylarge {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 0.875rem;
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  margin-top: 0.375rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 0 5px #dddddd, 0 6px #dddddd, 0 7px #dddddd, 0 8px #dddddd, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #fff;
+  border-color: #e6e6e6;
+  color: #223344;
+}
+button.keylarge:hover, button.keylarge:focus, button.keylarge.hover, button.keylarge.focus,
+a.keylarge:hover,
+a.keylarge:focus,
+a.keylarge.hover,
+a.keylarge.focus {
+  transform: translate3d(0, 1px, 8px);
+}
+button.keylarge:hover::after, button.keylarge:focus::after, button.keylarge.hover::after, button.keylarge.focus::after,
+a.keylarge:hover::after,
+a.keylarge:focus::after,
+a.keylarge.hover::after,
+a.keylarge.focus::after {
+  transform: translate3d(0, -1px, -8px);
+}
+button.keylarge:active, button.keylarge.active,
+a.keylarge:active,
+a.keylarge.active {
+  border-color: transparent;
+  box-shadow: none;
+  transform: translate3d(0, 8px, 0);
+}
+button.keylarge:active::after, button.keylarge.active::after,
+a.keylarge:active::after,
+a.keylarge.active::after {
+  transform: translate3d(0, -8px, 0);
+}
+button.keylarge::after,
+a.keylarge::after {
+  border-radius: 0.5rem;
+  border-width: 0.125rem;
+  bottom: -13px;
+  left: -0.375rem;
+  right: -0.375rem;
+  top: 3px;
+  transform: translate3d(0, 0, -8px);
+}
+button.keylarge:hover, button.keylarge:focus, button.keylarge.hover, button.keylarge.focus,
+a.keylarge:hover,
+a.keylarge:focus,
+a.keylarge.hover,
+a.keylarge.focus {
+  box-shadow: 0 0 #dddddd, 0 0px #dddddd, 0 1px #dddddd, 0 2px #dddddd, 0 3px #dddddd, 0 4px #dddddd, 0 5px #dddddd, 0 6px #dddddd, 0 7px #dddddd, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #e6e6e6;
+  color: #223344;
+}
+button.keylarge:active, button.keylarge.active,
+a.keylarge:active,
+a.keylarge.active {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 1px 1px #b3b3b3;
+  color: #223344;
+}
+button.keylarge::after,
+a.keylarge::after {
+  border-color: #cccccc;
+}
+button.keylarge.btnexit,
+a.keylarge.btnexit {
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 0 5px #ee7788, 0 6px #ee7788, 0 7px #ee7788, 0 8px #ee7788, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #dc3545;
+  border-color: #e4606d;
+  color: #ffffff;
+}
+button.keylarge.btnexit:hover, button.keylarge.btnexit:focus, button.keylarge.btnexit.hover, button.keylarge.btnexit.focus,
+a.keylarge.btnexit:hover,
+a.keylarge.btnexit:focus,
+a.keylarge.btnexit.hover,
+a.keylarge.btnexit.focus {
+  box-shadow: 0 0 #ee7788, 0 0px #ee7788, 0 1px #ee7788, 0 2px #ee7788, 0 3px #ee7788, 0 4px #ee7788, 0 5px #ee7788, 0 6px #ee7788, 0 7px #ee7788, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #e4606d;
+  color: #ffffff;
+}
+button.keylarge.btnexit:active, button.keylarge.btnexit.active,
+a.keylarge.btnexit:active,
+a.keylarge.btnexit.active {
+  background-color: #e4606d;
+  box-shadow: 0 0 1px 1px #f3b7bd;
+  color: #ffffff;
+}
+button.keylarge.btnexit::after,
+a.keylarge.btnexit::after {
+  border-color: #eb8c95;
+}
+button.keylarge.btngrey,
+a.keylarge.btngrey {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 0 5px #ccdddd, 0 6px #ccdddd, 0 7px #ccdddd, 0 8px #ccdddd, 2px 4px 4px #adb5bd, 0 -1px 4px #adb5bd;
+  background-color: #ffffff;
+  border-color: #ccddee;
+  color: #223344;
+}
+button.keylarge.btngrey:hover, button.keylarge.btngrey:focus, button.keylarge.btngrey.hover, button.keylarge.btngrey.focus,
+a.keylarge.btngrey:hover,
+a.keylarge.btngrey:focus,
+a.keylarge.btngrey.hover,
+a.keylarge.btngrey.focus {
+  box-shadow: 0 0 #ccdddd, 0 0px #ccdddd, 0 1px #ccdddd, 0 2px #ccdddd, 0 3px #ccdddd, 0 4px #ccdddd, 0 5px #ccdddd, 0 6px #ccdddd, 0 7px #ccdddd, 2px 3.5px 4px #adb5bd, 0 -1px 3.5px #adb5bd;
+  background-color: #ccddee;
+  color: #223344;
+}
+button.keylarge.btngrey:active, button.keylarge.btngrey.active,
+a.keylarge.btngrey:active,
+a.keylarge.btngrey.active {
+  background-color: #ccddee;
+  box-shadow: 0 0 1px 1px #99aabb;
+  color: #223344;
+}
+button.keylarge.btngrey::after,
+a.keylarge.btngrey::after {
+  border-color: #bdc6d0;
+}
+button.keybtn:disabled, button.keybtn.disabled,
+a.keybtn:disabled,
+a.keybtn.disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: none;
+}

@@ -1,0 +1,38 @@
+<span>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="page_category" >%page_category% * :</label>
+  <select class="col-sm-3 text-right" name="page_category" size="1" >
+   %page_categorys->value%
+  </select>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="page_access" >%page_access%:</label>
+   <select class="col-sm-3 text-right" name="page_access" size="1" >
+    %page_accesses->value%
+   </select>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="page_status" >%page_status%:</label>
+  <select class="col-sm-3 text-right" name="page_status" size="1" >
+   %page_states->value%
+  </select>
+ </div>  
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="page_langlocale" >%page_langlocale%:</label>
+  <select class="col-sm-3 text-right" name="page_langlocale" size="1" >
+           %page_langlocales->value%
+  </select>
+ </div>  
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="title" > %page_title% :</label>
+  <input id="title" onclick="settextselectedfield('title')" type="text" class="input-sm col-sm-3 text-right" name="title" value="%title->value%" required >
+ </div>
+ <div class="p100" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="comment" > %comment% </label>
+  <textarea rows="5" wrap="virtual"  class="form-control" style="width:400px;" maxlength="100" name="comment" id="page_comment" required >%shortcomment->value%</textarea>
+ </div><br>
+ <div class="p100" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="content" > %content% </label>
+  <textarea rows="7" wrap="virtual" class="form-control" style="width:400px;" name="content" id="content" style="width:250px;" required >%content->value%</textarea>
+ </div>
+</span>

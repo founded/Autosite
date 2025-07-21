@@ -1,0 +1,87 @@
+    </section>
+<!--section class='ERROR%error->value%'>
+%error->value%
+</section-->
+<div class="istat hidden-xs" >
+ <h2> %chart% </h2>
+ <div class="behidden" >
+  <a href="%path.install->value%/users/UserStats/?stats" > %more% </a>
+  <img src="%layoutpath->value%/stats/users.svg" >
+  <br>
+ </div>
+</div>
+<section id="Akeyboard" class="p100" >
+    <link href="%layoutpath->value%/keyboard.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" >
+		var selectedfield = '';
+		var textselectedfield = '';
+		var iscapslock = false;
+		var isaltgr = false;
+		function keyboardpush(key){
+			if(selectedfield == ''){
+				alert('%no.field.not.select%');
+			}
+	    	var afield = document.getElementById(selectedfield); 
+	    	textselectedfield = afield.value + key;
+	    	afield.value = textselectedfield;
+	    }
+	    function keyboardbackspace(){
+	    	var afield = document.getElementById(selectedfield);
+	    	textselectedfield = (afield.value).substring(0,afield.value.length -1);
+	    	afield.value = textselectedfield;
+	    }
+	    function settextselectedfield(fieldname){
+			selectedfield = fieldname;
+		}
+	</script>
+	<a data-toggle="collapse" data-target="#myKeyboard" >
+		<img class="icon" src="%path.layout->value%img/icons/t/tileview.svg" alt="%keyboard.expance%" >
+	</a> 
+	<!--<input type="text" name="test" id="test" value="test" onclick="settextselectedfield(\'test\')" >-->
+	<div id="myKeyboard" class="collapse in" >
+        <div class="keyboard" >
+		   %keyboard->value%
+		</div> 
+    </div>
+</section>
+ <section id="footer" class="odd" >
+    <div class="footblock" >
+     <h4> %info% </h4>
+      <ul> <li> </li> </ul>
+    </div>
+    <div class="footblock" >
+    <h4> %cms% </h4>
+    <ul> <li> CMS AUTOSITE %version->value% </li> </ul>
+   </div>
+  <div class="clearfix visible-xs" > </div>
+  <div class="footblock" >
+   <h4> %contact% </h4>
+   <ul>
+    <li> %call%: 0032 478 39 40 81 </li>
+   </ul>
+  </div>
+  <div class="footblock" >
+   <h4>%webdevelopers%</h4>
+   <ul>
+    <li>@%payroll%</li>
+    <li>%fast%,%secure%,%spyfree%</li>
+   </ul>
+  </div>
+ </section>
+<footer id="foot" >
+ <!--@layout @foot -->
+ <img src="%layoutpath->value%/img/icons/PHP8.svg" class="btn_html5 icon" >
+ <img src="%layoutpath->value%/img/icons/h/html5.svg" class="btn_html5 icon" >
+ <img src="%layoutpath->value%/img/icons/m/mysql.svg" class="btn_html5 icon" >
+ %copyright% &copy; %Y->value% @content &bull;
+ <!--@Opensource -->
+ <a href="%path.install->value%/cms/StartCms/" title="Download Autosite cms" > @CMS By Lieven R </a>&bull;
+ %version% %version->value%&bull;
+ <!--@CONTACT -->
+ <a href="mailto:%servicemail->value%" ><img src="%layoutpath->value%/img/icons/e/Email.svg" class="icon" alt="%mailto%" /></a>&bull;
+ <a href="skype:%servicenr->value%?call" class="btn_skype" >
+ <img src="%layoutpath->value%/img/icons/s/skype.svg" class="btn_skype icon" ></a>
+ <a href="skype:%servicenr->value%?add" >%-add to skype-%</a>
+</footer>
+</body>
+</html>

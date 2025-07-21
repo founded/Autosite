@@ -1,0 +1,19 @@
+<span>
+<div class="form-group" >
+    <label class="control-label col-lg-3 col-md-3 col-sm-3" for="gallery_categoryname" >%gallery_categoryname% :</label>
+    <input id="gallery_categoryname" onclick="settextselectedfield('gallery_categoryname')" type="text" class="input-sm col-sm-3 text-right" name="gallery_categoryname" value="%gallery_categoryname->value%" required>
+    <span class="input_info" >%input_info.required%:%input_info.categoryname%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-3 col-md-3 col-sm-3" for="gallery_categorylabel" >%gallery_categorylabel% :</label>
+    <input id="gallery_categorylabel" onclick="settextselectedfield('gallery_categorylabel')" type="text" class="input-sm col-sm-3 text-right" name="gallery_categorylabel" value="%gallery_categorylabel->value%" required>
+    <span class="input_info" >%input_info.required%:%input_info.label%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-3 col-md-3 col-sm-3" for="gallery_type" >%gallery_type% :</label>
+    <select  name="gallery_type" size="1" >
+       %gallery_types->value%
+    </select>
+    <span class="input_info" >%input_info.required%:%input_info.image.access%</span>
+</div>
+</span>

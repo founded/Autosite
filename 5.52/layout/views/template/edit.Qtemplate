@@ -1,0 +1,34 @@
+<link href="%path.layout->value%css/editor.css" rel="stylesheet" type="text/css" />
+<form id="editor" class="form-horizontal" role="form" method="post" name="%formname->value%" enctype="multipart/form-data" >  
+    <input type="hidden" readonly="readonly" name="edit" value="" />
+    <br />
+       <!-- ********************** EDITORMENU *********************-->
+    <div class="form-group" >
+        <label class="control-label" for="location" >%location%:</label>
+        <input type="text" id="location" onclick="settextselectedfield('location')" name="location" value="%location->value%" required />
+    </div>
+    <div class="form-group" >
+        <label class="control-label" for="name" >%templatename%:</label>
+        <input type="text" id="name" onclick="settextselectedfield('name')" name="name" value="%name->value%" required />
+    </div>
+    <label class="control-label" for="content" >%content% :</label>
+    <div  class="form-group" >
+        <!-- ********************** SOURCEPANEL *********************-->
+		<div id="Sourcepanel" class="Apanel p100" >
+			<textarea id="Source" onclick="settextselectedfield('content')" name="content" wrap="VIRTUAL" class="Source" >%content->value%</textarea>
+		</div>
+        <!-- ********************** EDITORPANEL *********************-->
+        <div id="Editorpanel" onclick="settextselectedfield('Editorpanel')" contenteditable="true" class="Apanel" >%content->value%</div>
+        </div>
+        <!-- ********************** imputPANEL *********************-->
+    <div>
+    </div>
+    <!-- ********************** EDITORFOOTER *********************-->
+	<div id="Editorfoot" class="Apanel" >
+        <a class="btn " href="javascript:issource = true;javascript:senddata();" id="tosource" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/s/save.svg" alt="%editor.SAVE%" />
+        </a>
+	</div>
+    <script language="JavaScript" src="%path.layout->value%js/editor.js" ></script>
+</form>
+       

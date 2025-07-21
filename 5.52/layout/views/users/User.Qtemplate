@@ -1,0 +1,12 @@
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="name" >%name% :</label>
+    <input id="name" onclick="settextselectedfield('name')" autofocus="" class="input-sm col-sm-4 text-right" type="text" name="name" >*
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="gender" >%gender% :</label>
+    <select size="1"  class="input-sm col-sm-2 text-right" >
+    	<option value="M" >%male%</option>
+    	<option value="F" >%female%</option>
+    	<option value="O" >%other%</option>
+    </select>
+</div>

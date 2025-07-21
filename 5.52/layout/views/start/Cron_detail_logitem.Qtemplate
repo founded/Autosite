@@ -1,0 +1,21 @@
+<div class="col-lg-12 col-md-6 col-sm-6 col-xs-12" >
+ <span class="col-lg-12 col-md-12 col-sm-10 col-xs-10 %row->value%" >
+    <span class="col-lg-4 col-md-12 col-sm-10 col-xs-10" >
+        %date->value%"
+    </span>
+    <span class="col-lg-3 col-md-12 col-sm-10 col-xs-10" >
+        %dtime->value%   
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='CHECKED[%id->value%]' name='CHECKED[%id->value%]' %isChecked->value% >
+            <label class="col-lg-1" for="CHECKED[%id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/a/accessibility.svg" alt="%CHECKED%" >
+            </label>
+        </div>
+    </span>
+    <span class="col-lg-3 col-md-12 col-sm-10 col-xs-10" >
+        <a class="cronitem pull-right" href="./?deletecronlogitem=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+        </a>
+    </span>
+ </span>
+</div>

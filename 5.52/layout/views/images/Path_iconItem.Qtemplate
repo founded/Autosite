@@ -1,0 +1,8 @@
+<div id="galleryitem" >
+    <figure>
+        <img src="%path.layout->value%%urlto->value%" width="50" height="50" />
+        <figcaption>
+         %namekey->value% 
+        </figcaption>
+    </figure>
+</div>

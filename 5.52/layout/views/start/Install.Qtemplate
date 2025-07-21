@@ -1,0 +1,8 @@
+<span class="col-lg-11" >
+    <h1 class="input-lg" >%title->value%</h1>
+    <a href="./?addnewinstall" class="btn btn-info pull-right" >%addnewinstalls%</a>
+    <a href="./?checkup" class="btn btn-info pull-right" >%check%</a>
+    <a href="./?access" class="btn btn-info pull-right" >%access%</a>
+    <a href="./?sitemap" class="btn btn-info pull-right" >%sitemap%</a>
+   %dotgive.public.access%
+</span>

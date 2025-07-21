@@ -1,0 +1,6 @@
+<span>
+   <div class="form-group" >
+      <label class="control-label col-lg-3 col-md-3 col-sm-3" for="name" >%name% :</label>
+    <input id="name" onclick="settextselectedfield('name')" type="text" class="input-sm col-sm-3 text-right" name="name" value="%name->value%" required>
+   </div>
+</span>

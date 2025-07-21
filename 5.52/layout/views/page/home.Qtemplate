@@ -1,0 +1,17 @@
+<h1> welcome</h1>
+<svg  height="600px" width="2200px" class="p100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <defs>
+     <filter id="iXfilter" >
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"    result="blur"/>
+      <feOffset in="blur" dx="8" dy="8"  result="offsetBlur"/>
+      <feMerge>
+         <feMergeNode in="offsetBlur"/>    <feMergeNode in="blur"/>    <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g><text font-family="sans-serif" font-size="20" filter="url(#iXfilter)" >
+          <textPath xlink:href="#pathfortext" startOffset="15"   >
+              <tspan fill="#fff" >Welcome. New engine! New bot! New functions! </tspan>
+          </textPath>
+   </text></g>
+</svg>

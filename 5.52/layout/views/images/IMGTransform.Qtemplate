@@ -1,0 +1,6 @@
+<span class="mytoptool" >
+<a href="./?logo" class="btn btn-info pull-right" >%logo%</a>
+<a href="./?logoseven" class="btn btn-info pull-right" >%logo.seven.color%</a>
+<a href="./?clean" class="btn btn-info pull-right" >%clean%</a>
+<a href="./?cleanspy" class="btn btn-info pull-right" >%cleanspy%</a>
+</span>

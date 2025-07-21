@@ -1,0 +1,2 @@
+//products.push('%name->value%')
+products.push('<!--no eol here--><a href="./catalog/painting/?painting=%id->value%" title="%see.bigger%" ><table><tr><td> </td><td><div class="frontpromo_item" ><h2 class="imagetitle" >%name->value%</br> </h2>%images->value%</div></td></tr></table></a>');

@@ -1,0 +1,37 @@
+<li>
+    <div class="%chattxt->value%" >
+        <fieldset >
+            <legend>*%stars->value%* title : %title->value%
+                <br> <a href="%path.install->value%%location->value%" target="_blank" >%location->value%</a>
+                     [<a href="%path.install->value%%location->value%?view=%id->value%" target="_blank" >%watch% %issue%</a>]
+                     <a href="%path.module->value%?category=%category_id->value%" >%categorylabel->value%</a>
+            </legend>
+        <div class="row" >
+            <span class="col-lg-8" >
+            %shortcomment->value%
+                <hr >
+                %detail->value%
+            </span>
+            <span class="col-lg-3" >
+                <br> <a href="%path.module->value%?user=%accound_id->value%" class="pull-right" >%user.viewallitems% %username->value%</a>
+                <br> <a href="%path.install->value%/users/VisiteUser?view=%accound_id->value%" >%view.user%</a>
+                <br>%inputdate->value%
+                %ip->value%
+            </span>
+            <span class="col-lg-3" >
+                <br>%status%:%STATUS->value%
+            </span>
+        </div>
+        <hr> 
+        <div ><!--visual hidden-->
+             <br>  'support_id' => %support_id->value%
+            <br> %phone%:%phonenr->value%|[%postcode->value% %town->value%( %city->value% %state->value% )]
+            <br> @( %province->value% %country->value% )
+            <img height="30" src="%path.layout->value%img/Locations/%locale->value%_%imgspec->value%%state->value%.gif" >
+            <a href="%path.install->value%/adres/Location/?view=%location_id->value%" >%location.viewit%</a>
+            <img height="25" width="45" src="%path.layout->value%img/FLAGS/flag_%locale->value%.gif" >
+            <br>
+        </div>
+    </fieldset>
+    </div>
+</li>

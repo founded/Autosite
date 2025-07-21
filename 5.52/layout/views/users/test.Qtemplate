@@ -1,0 +1,28 @@
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons" style="height: auto; width: 580px; top: 614px; left: 385px; display: block; z-index: 100001;" tabindex="-1" role="dialog" aria-describedby="dialoog" aria-labelledby="ui-id-1" >
+<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" >
+<div id="dialoog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 0px; max-height: none; height: 339.4px;" >
+<div id="dialoogTabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all" >
+<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist" >
+<li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="dialoogTabVelden" aria-labelledby="ui-id-2" aria-selected="true" aria-expanded="true" >
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="dialoogTabZoeken" aria-labelledby="ui-id-3" aria-selected="false" aria-expanded="false" >
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="dialoogTabFilter" aria-labelledby="ui-id-4" aria-selected="false" aria-expanded="false" >
+<li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="dialoogTabWeergave" aria-labelledby="ui-id-5" aria-selected="false" aria-expanded="false" >
+</ul>
+<div id="dialoogTabVelden" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" role="tabpanel" style="height: 272.433px; overflow: auto;" aria-hidden="false" >
+<ul id="veldenWeergeven" class="sorteerbaar ui-sortable" >
+<li class="ui-state-default ui-sortable-handle" >email</li>
+<li class="ui-state-default ui-sortable-handle" >geborenop</li>
+<li class="ui-state-default ui-sortable-handle" >datumnieuw</li>
+<li class="ui-state-default ui-sortable-handle" >datumbezoek</li>
+<li class="ui-state-default ui-sortable-handle" >status</li>
+</ul>
+<ul id="veldenVerbergen" class="sorteerbaar ui-sortable" >
+<br class="clear" >
+</div>
+<div id="dialoogTabZoeken" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" role="tabpanel" style="height: 272.433px; overflow: auto; display: none;" aria-hidden="true" >
+<div id="dialoogTabFilter" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" role="tabpanel" style="height: 272.433px; overflow: auto; display: none;" aria-hidden="true" >
+<div id="dialoogTabWeergave" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-5" role="tabpanel" style="height: 272.433px; overflow: auto; display: none;" aria-hidden="true" >
+</div>
+</div>
+<div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix" >
+</div>

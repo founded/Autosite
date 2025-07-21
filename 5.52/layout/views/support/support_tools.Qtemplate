@@ -1,0 +1,7 @@
+<div class="p100" >
+    <ul class="tabs" >
+        	<li><a href="./" class="btn btn-info pull-right" >%back%</a></li>
+        	<li><a href="./?edit=%id->value%" class="btn btn-info pull-right" >%edit.ticket%</a></li>
+        	<li><a href="./?lastactions" class="btn btn-info pull-right" >%lastactions%</a></li>
+    </ul>
+</div>

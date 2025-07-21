@@ -1,0 +1,30 @@
+<div class="tegel equally" onmouseover="mytooltip_show('tooltip-%Name->value%','item-%Name->value%');" onmouseout="mytooltip_hide('tooltip-%Name->value%');" >
+ <h3>%Name->value% </h3>
+ <h3>%Engine->value%</h3>
+  <div id="item-%Name->value%" class="info" >
+   %database:rows%:%Rows->value%
+   %database:autoindex%:%Auto_increment->value%
+  </div>
+  <h3>%Create_time->value%</h3>
+  <span class="checked" >
+   <input class="checkbox" type="checkbox" id="inplugin[%Name->value%]" name="inplugin[%Name->value%]" >
+    <label for="inplugin[%Name->value%]" >
+     <img height="15" width="15" src="%path.layout->value%img/icons/p/plugin.svg" alt="%database.to.inplugin%" >
+    </label>
+  </span>
+  <span class="checked" >
+   <input class="checkbox" type="checkbox" id="inbackup[%Name->value%]" name="inbackup[%Name->value%]" >
+    <label for="inbackup[%Name->value%]" >
+     <img height="15" width="15" src="%path.layout->value%img/icons/b/box-add.svg" alt="%database.to.inbackup%" >
+    </label>
+  </span>
+    <div id="item-%Name->value%" class="info" >
+     %tools->value%
+    </div>
+    <div id="tooltip-%Name->value%" class="mytooltip equally info" ><!--visual hidden-->
+  <fieldset class="tools" >
+       %collums->value%
+       <legend>%tools%</legend>
+  </fieldset>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        <li><a href="./?databases" class="btn btn-info pull-right" >%databases%</a></li>
+        <li><a href="./?sqlhelp" class="btn btn-info pull-right" >%help%</a></li>
+        <li><a href="./?tools" class="btn btn-info pull-right" >%tools%</a></li>
+        <li><a href="./?e_query&database=%database->value%" class="btn btn-info pull-right" >%sql.query%</a></li>
+        <li><a href="./?prepareforplugin" class="btn btn-info pull-right" >%prepareforplugin%</a></li>
+    </ul>
+</span>

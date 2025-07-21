@@ -1,0 +1,9 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        	<li><a href="./?ManageCategorys" class="btn btn-info pull-right" >%ManageCategorys%</a></li>
+        	<li><a href="./?addCategory" class="btn btn-info pull-right" >%addCategory%</a></li>
+        	<li><a href="./?Summary" class="btn btn-info pull-right" >%summary%</a></li>
+        	<li><a href="./?profiles" class="btn btn-info pull-right" >%Profiles%</a></li>
+        	<li><a href="./?Icons" class="btn btn-info pull-right" >%icons%</a></li>
+    </ul> 
+</span>

@@ -1,0 +1,3 @@
+<a href="%path.install->value%%url->value%" title="Automatic site" >
+    <img src="%layoutpath->value%/img/icons/php7.svg" class="icon" alt="edit template" />
+</a>

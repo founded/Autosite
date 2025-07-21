@@ -1,0 +1,38 @@
+<span>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="namekey" >%namekey% :</label>
+        <input type="text" onclick="settextselectedfield('namekey')" class="input-sm col-sm-3 text-right" name="namekey" value="%namekey->value%" required >
+        <span class="input_info" > %input_info.required%:%input_info.namekey% </span>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="TYPE" >%calendar_access% :</label>
+        <select class="col-sm-3 text-right"  name="TYPE" size="1" >
+           %types->value%
+        </select>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="calendar_category" >%calendar_category% :</label>
+        <select class="col-sm-3 text-right" name="calendar_category" size="1" >
+           %calendar_categorys->value%
+        </select>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="from" > %from% :</label>
+        <input type="date" onclick="settextselectedfield('from')" id="from" class="datepicker input-sm col-sm-3 text-right" name="from" value="%from->value%" pattern="[0-9]{1,2}\:[0-9]{1,2}$" required >
+        <span class="input_info" > %input_info.required%:%input_info.fromdate% </span>
+		<script type="text/javascript" >
+			$(function(){
+				$('*[name=from]').appendDtpicker({
+					"inline": true,
+					"locale": "en",
+					"dateOnly": true
+				});
+			});
+		</script>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="to" > %to% :</label>
+        <input type="text" onclick="settextselectedfield('to')" id="to" class="datepicker input-sm col-sm-3 text-right" name="to" value="%to->value%" required >
+        <span class="input_info" > %input_info.required%:%input_info.todate% </span>
+    </div>
+</span>

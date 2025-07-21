@@ -1,0 +1,46 @@
+<script type="text/javascript" >
+    var Acomplete ={};
+    var sendfail = false;
+    Acomplete.send = function(urlto,fromid,text){
+        $('#ajaxLoader').show();
+        var fd = new FormData();
+            fd.append(fromid,text);
+            ajax.Ajax2visable = $.ajax({
+                url: urlto,
+                type: 'POST',
+                dataType: 'json',
+                data: fd,
+                processData: false,
+                contentType: false,
+                cache: false,
+                fromid:fromid,
+                success: function(data){
+                    var html ='';
+                    $.each(data.Acompletelist, function (index, item) {
+                            html += "<option value='" + item + "' >";
+                        });
+                    $("#"+fromid+"_Acomplete_list").html(html)
+                },
+                error: Acomplete.fail,
+                timeout: ajax.timeout
+            });
+    };
+    Acomplete.fail = function(jQXHR,jQMsg) {
+        ajax.Ajax2visable.abort();
+        Ajax2visable = null;
+    };
+    $(document).ready(function() {
+        $("input[type='text']").keyup(function(e){
+            if(document.getElementById(this.id+"_Acomplete_list")){
+                if(!(e.which>37&&e.which<41)&&e.which!=13){
+                    var text = $(this).val();
+                    Acomplete.send("%path.module->value%?Acomplete= ",this.id,text);
+                    if(sendfail){
+                       sendfail = false;
+                    }
+                }
+            }
+        })
+    });
+</script>
+

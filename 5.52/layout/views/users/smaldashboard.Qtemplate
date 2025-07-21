@@ -1,0 +1,4 @@
+<section id="smaldashboardinfo" >
+    <span class="%STATUS->value%" >%statusinfo->value%</span>
+    <span>%content->value%</span>
+</section>

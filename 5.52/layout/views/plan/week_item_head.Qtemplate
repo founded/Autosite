@@ -1,0 +1,8 @@
+<span class="week_item_head" >
+  <small>%Y->value%-%m->value%-%Iweek->value%</small>
+</span>
+<a class="baritem" href="./?view&year=%Y->value%&month=%m->value%&day=%Iweek->value%" >
+  <span class="week_item_head" >
+    <small> %Callendar_title->value% </small>
+  </span>
+</a>

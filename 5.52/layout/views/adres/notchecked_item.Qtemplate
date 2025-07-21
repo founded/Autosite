@@ -1,0 +1,33 @@
+<hr />
+<div class="col-lg-12 col-md-5 col-sm-3  col-xs-3 %row->value%" >
+    <div class="col-lg-6 col-md-5 col-sm-3  col-xs-3" >
+    <span class="checked" >
+        <input class="checkbox" type="checkbox" id="setLocationChecked[%id->value%]" name="setLocationChecked[%id->value%]" %isChecked->value% >
+        <label for="setLocationChecked[%id->value%]" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/c/check.svg" alt="%enabled%" >
+         </label>
+    </span>
+    <h1>%town->value%</h1>
+        <div class="form-group" >      
+             %postcode->value% %town->value%
+        <br>(%inthevicinityof% %city->value% %state->value% %isaplaceof% %country->value%)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-5 col-sm-3  col-xs-3" >
+        <img height="30" src="%path.layout->value%img/FLAGS/flag_%locale->value%.gif" alt="%country->value%" >
+        <br />               
+        <img height="100" src="%path.layout->value%img/Locations/%locale->value%_%imgspec->value%.gif" >
+    </div>
+    <span class="col-lg-2 col-sm-8 col-sm-10 col-xs-10" >
+       <br>
+       <a class="auctionitem" href="%path.install->value%/images/IMGByUser/?bind=auction&nr=%id->value%" >
+            <img height="30" width="30" src="%path.layout->value%img/icons/i/image.svg" alt="%addimages%" >
+       </a>
+       <a class="auctionitem" href="./?editlocation=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" >
+       </a>
+       <a class="auctionitem" href="./?delete=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+       </a>
+     </span>
+ </div>

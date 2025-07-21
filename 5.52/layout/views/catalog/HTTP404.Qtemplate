@@ -1,0 +1,10 @@
+<h1>%product% %not.found%</h1>
+
+
+<p>
+%product.notfound.info%
+</p>
+
+<p>
+<a> %make.support.ticket% </a>
+</p>

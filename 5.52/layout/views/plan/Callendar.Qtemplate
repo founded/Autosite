@@ -1,0 +1,8 @@
+<h3>
+    <span>%prevY->value% %prevm->value% | %Y->value% %M->value% | %nextm->value% %nextY->value%</span> 
+    <span>
+        <a href="./?ics" class="btn btn-info pull-right" >%ics%</a>
+        <a href="./?export" class="btn btn-info pull-right" >%export%</a>
+        <a href="./?summary" class="btn btn-info pull-right" >%summary%</a>
+    </span>
+</h3>

@@ -1,0 +1,1 @@
+<a class="%class->value%" href="%path.url->value%?page=%paginnr->value%%param->value%" >[%paginnr->value%]</a>

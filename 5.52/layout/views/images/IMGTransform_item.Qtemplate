@@ -1,0 +1,9 @@
+<div id="galleryitem" >
+        <time>%image_time->value%</time>
+        <figure>
+            <img src="%path.install->value%%urlto->value%" width="150" height="150" />
+            <figcaption>
+            %name%:%namekey->value%
+            </figcaption>
+        </figure>
+</div>

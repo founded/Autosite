@@ -1,0 +1,1 @@
+<span class="week_item_info %status->value%" > <small>%amount%</small> <b>%amount->value%</b> </span>

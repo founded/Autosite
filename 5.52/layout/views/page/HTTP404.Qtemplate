@@ -1,0 +1,15 @@
+<hr />
+<div class="error" >
+	<h3>ERROR: PAGENOTFOUND</h3>
+	<PRE> 
+    %page.notfound%
+    %contact% %servicenr->value%
+    %Webmaster% => 
+
+   </PRE>
+   <ul>
+    <li>%check.access%</li>
+	<li>%check.database% %table%'page'</li>
+	<li>%check.removefromsearch%</li>
+</ul>
+</div>

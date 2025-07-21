@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author Lieven Roegiers
+ * @copyright 2017
+ */
+include('./general.php');
+$_GET['loc']= 'start';
+$_GET['action']= 'Crons';
+class startcrons extends Init{
+    public function __construct() {
+        //see includes/start/Crons_model.inc           equals this key
+        parent::__constructCrons('en','start','Crons','yourprivatekey');
+        //parent::__constructCrons('en','start','Crons','yourprivatekey','DAY');
+        //parent::__constructCrons('en','start','Crons','yourprivatekey','HOUR');
+    }
+}
+new startcrons();
+?>

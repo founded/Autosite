@@ -1,0 +1,29 @@
+<div class="%row->value% col-lg-12" >
+    <br>
+    <span class="col-lg-1" >
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='usefilter[%id->value%]' name='usefilter[%id->value%]' %isuse>value%>
+            <label class="col-lg-1" for="usefilter[%id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/d/delete.svg" alt="%accessibility%" >
+            </label>
+        </div>
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='enabled[%id->value%]' name='enabled[%id->value%]' %isREMOVE->value%>
+            <label class="col-lg-1" for="enabled[%id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/d/delete.svg" alt="%accessibility%" >
+            </label>
+        </div>
+    </span>
+    <a href="./?view=%id->value%" >
+    <span class="col-lg-3" > %email->value% </span>
+    <span class="col-lg-2" >
+       <span class="small" > %delaydays->value% </span>
+       <span class="small" > </span>
+    </span>
+    </a>
+    <span class="col-lg-4" >
+       <a href="./?ieditfilter=%id->value%" >
+            <img class="Bicon" src="%path.layout->value%img/icons/e/edit.svg" alt="%infoAboutUser%" >
+       </a>
+    </span>
+</div>

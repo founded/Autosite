@@ -1,0 +1,5 @@
+<section id="%id->value%" class="FAIL" >
+  %input.not.saved.exist%
+  <br />
+  %info->value%
+</section>

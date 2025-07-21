@@ -1,0 +1,12 @@
+<span class="p100 lineitem" >
+<ul class="tabs" >
+    	<li><a href="./?equals" class="btn btn-info pull-right" >%location.equals%</a></li>
+    	<li><a href="./?merge" class="btn btn-info pull-right" >%location.merges%</a></li>
+    	<li><a href="./?addLocation" class="btn btn-info pull-right" >%location.add%</a></li>
+    	<li><a href="./?profiles" class="btn btn-info pull-right" >%location.imports%</a></li>
+        <li><a href="./?notchecked" class="btn btn-info pull-right" >%location.notchecked%</a></li>
+        <li><a href="./?addLocale" class="btn btn-info pull-right" >%location.addLocale%</a></li>
+        <li><a href="./?LocalesSummary" class="btn btn-info pull-right" >%location.LocalesSummary%</a></li>
+        <li><a href="./?Checklocales" class="btn btn-info pull-right" >%location.Checklocales%</a></li>
+</ul>
+</span>

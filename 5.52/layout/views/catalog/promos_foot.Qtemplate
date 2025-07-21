@@ -1,0 +1,39 @@
+</SCRIPT>
+<script language="JavaScript" src="%path.layout->value%/js/productpromo7show.js" ></script>
+<center>
+<button class="btn" id="prev" onclick="fproductcatalogprev()" title="%play%" ><img src="%path.layout->value%img/icons/p/prev.svg" border="0" class="icon" />	</button>
+<input class="btn"  id="productcatalogtime" onchange="setinterval()"  title="%play%" >%time.secondes%
+<button class="btn" id="productcatalogpauze" onclick="fproductcatalogpauze();" title="%pauze%" ><img src="%path.layout->value%img/icons/p/pause.svg" border="0" class="icon" />	</button>
+<button class="btn hidden" id="productcatalogplay" onclick="fproductcatalogpauze()" title="%play%" ><img src="%path.layout->value%img/icons/r/repeat.svg" border="0" class="icon" />	</button>
+<button class="btn" id="next" onclick="fproductcatalognext()" title="%play%" ><img src="%path.layout->value%img/icons/n/next.svg" border="0" class="icon" />	</button>
+</center>
+<script language="JavaScript" >
+  
+  function fproductcatalogpauze(){
+  	if(productshow){
+  		 setclass("productcatalogpauze",'hidden btn');
+  	     setclass("productcatalogplay",'btn');
+  	}else{
+  	   	 setclass("productcatalogpauze",'btn');
+  	     setclass("productcatalogplay",'hidden btn');
+  	}
+    productshow=!productshow;
+    replacevalue('productcatalogtime', intervaltijd);
+  }
+  function setclass(id,value){
+		document.getElementById(id).className=value;
+  }
+  function replacevalue(id,value){
+		document.getElementById(id).value=value;
+  }
+  function setinterval(){
+		intervaltijd = document.getElementById('productcatalogtime').value;
+        if(intervaltijd>0){
+            resetinterval();
+        }
+  }
+  document.getElementById('productcatalogtime').value = intervaltijd;
+</script>
+<center></canvas><div id="catalog" ></div>
+</center>
+

@@ -1,0 +1,7 @@
+<span class="p100 lineitem" >
+<ul class="tabs" >
+    	<li><a href="./?addTicket" class="btn btn-info pull-right" >%HELP%</a></li>
+    	<li><a href="./?MyTickets" class="btn btn-info pull-right" >%MySummary%</a></li>
+    	<li><a href="./?myWorkspace" class="btn btn-info pull-right" >%MyWorkspace%</a></li>
+</ul>
+</span>

@@ -1,0 +1,3 @@
+<div id="templateitem" >
+       <a href="./?edit&template_path=%template_path->value%&template=%namekey->value%" > %namekey->value%</a>|   
+</div>

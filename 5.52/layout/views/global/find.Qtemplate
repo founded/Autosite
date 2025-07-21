@@ -1,0 +1,55 @@
+<form class="form-horizontal" role="form" method="post" name="Fsearch" id="Fsearch" >
+ <div class="form-group" >
+  <input onclick="settextselectedfield('find')" class="btn pull-right icon-search hidden-xs" type="submit" value="%search%" name="find" id="find" >
+  <div class="complete_container" >
+   <input onclick="settextselectedfield('search')" class="input-lg text-right pull-right hidden-xs" type="text" list="search_Acomplete_termlist" name="search" autocomplete="off" value="%search->value%" id="search" >
+   <datalist id="search_Acomplete_termlist" ></datalist>
+  </div>
+ </div>
+</form>
+<script type="text/javascript" >
+  var Asearch ={};
+  var sendfail = false;
+  var MIN_LENGTH = 3 ;
+  Asearch.send = function(urlto,fromid,text){
+    $('#ajaxLoader').show() ;
+    var fd = new FormData() ;
+    fd.append(fromid,text) ;
+    ajax.Ajax2visable = $.ajax({
+        url: urlto,
+        type: 'POST',
+        dataType: 'json',
+        data: fd,
+        processData: false,
+        contentType: false,
+        cache: false,
+        fromid:fromid,
+        success: function(data){
+            var html = "";
+            $.each(data.Athermlist, function(index, item){
+                html += "<option value='" + item + "' >";}
+            );
+            $("#search_Acomplete_termlist").html(html)
+        },
+        error: Asearch.fail,
+        timeout: ajax.timeout
+    }) ;
+  };
+  Asearch.fail = function(jQXHR,jQMsg) {
+    ajax.Ajax2visable.abort() ;
+    Ajax2visable = null ;
+  };
+  $(document).ready(function() {
+    $("#search").keyup(function(e){
+        if(!(e.which>37&&e.which<41)&&e.which!=13){
+                var text = $(this).val() ;
+                if(text.length >= MIN_LENGTH) {
+                Asearch.send("%path.install->value%/search/Term/?Acomplete=search",this.id,text) ;
+                if(sendfail){
+                   sendfail = false;
+                }
+        }
+      }
+    })
+  });
+</script>

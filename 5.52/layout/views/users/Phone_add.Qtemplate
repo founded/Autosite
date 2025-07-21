@@ -1,0 +1,12 @@
+<span>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="PhoneNR" >%Phone% :</label>
+        <input id="PhoneNR" onclick="settextselectedfield('PhoneNR')" type="text" class="input-sm col-sm-3 text-right" name="PhoneNR" required>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="phone_type" >%phone_type% :</label>
+        <select class="col-sm-3 text-right" name="phone_type" size="1" >
+           %phone_types->value%
+        </select>
+    </div>
+</span>

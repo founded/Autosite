@@ -1,0 +1,7 @@
+<tr class="%row->value%" >
+    <td><span class="right" >%translatefrom->value%</span></td>
+    <td><span class="right" ><a href="%path.install->value%/translator/Translate/?key=%key->value%&locale=%localedest->value%" class="btn btn-info pull-right" target="_blank" >%edit%</a></span></td>
+    <td><span class="right" ><a href="https://translate.google.be/#%localesrc->value%/%localedest->value%/%translatefrom->value%" class="btn btn-info pull-right" target="_blank" >%Gtrans%</a></span></td>
+    <td><span class="left" >%translateto->value%</span></td>
+    <td><span class="left" ><input id="%key->value%" onclick="settextselectedfield('%key->value%')" type="text" value="%translateto->value%" name="%key->value%" /></span></td>
+</tr>

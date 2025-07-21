@@ -1,0 +1,7 @@
+    	<span class="p100 mimenav" >
+      <a href="./" class="content plannav" >%producthome%</a>
+      <a href="./?addgroup" class="content plannav" >%addgroup%</a>
+      <a href="./?addproduct" class="content plannav" >%addproduct%</a>
+      <a href="./?products" class="content plannav" >%products%</a>
+      <a href="./?categorys" class="content plannav" >%categorys%</a>
+		</span>

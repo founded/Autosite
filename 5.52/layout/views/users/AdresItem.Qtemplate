@@ -1,0 +1,25 @@
+<span class="col-lg-12 col-md-10 col-sm-9 col-xs-9 %row->value%" >
+    <a class="adresitem" href="%path.install->value%/adres/LocationDetail/?view=%adresdetail_id->value%" >
+    <span class="col-lg-3 col-md-2 col-sm-3 col-xs-3" >
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='adresvisibility[%adresdetail_id->value%]' name='adresvisibility[%adresdetail_id->value%]'  %isVisable->value% />
+            <label class="col-lg-1" for="adresvisibility[%adresdetail_id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%visibility%" />
+            </label>
+        </div>
+    </span>
+    <span class="col-lg-1 col-md-1 hidden-sm hidden-xs" >
+    </span>
+    <span class="col-lg-4  col-md-6 col-sm-6 col-xs-6" >
+            %Adres% : %street->value% %houseNumber->value% %postcode->value% %town->value% %state->value% <br>
+    </span>
+    </a>
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
+       <a class="adresitem" href="%path.install->value%/adres/LocationDetail/?edit_adres=%adresdetail_id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" />
+       </a>
+       <a class="adresitem" href="%path.install->value%/adres/LocationDetail/?delete_adres=%adresdetail_id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" />
+       </a>
+    </span>
+</span>

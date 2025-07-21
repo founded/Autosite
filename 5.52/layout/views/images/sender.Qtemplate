@@ -1,0 +1,40 @@
+<script type="text/javascript" >
+var item ={};
+var sendfail = false;
+item.send = function(urlto,fromid,isChecked){
+    $('#ajaxLoader').show();
+    var fd = new FormData();
+        fd.append(fromid,isChecked);
+        ajax.Ajax2visable = $.ajax({
+            url: urlto,
+            type: 'POST',
+            dataType: 'json',
+            data: fd,
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: item.ok,
+            error: item.fail,
+            timeout: ajax.timeout
+        });
+};
+item.ok = function(data) {
+    Ajax2visable = null;
+};
+item.fail = function(jQXHR,jQMsg) {
+    ajax.Ajax2visable.abort();
+    Ajax2visable = null;
+};
+$(document).ready(function() {
+    $("input[type='checkbox']").change(function(e){
+        var ischecked = $(this).is(":checked");
+        item.send('%path.module->value%/?bind=%bind->value%&nr=%nr->value%&check= ',this.id,ischecked);
+        if(sendfail){
+           if(ischecked) {      $(this).prop('checked', false);
+           }else{               $(this).prop('checked', true);
+           }
+           sendfail = false;
+        }
+    })
+});
+</script>

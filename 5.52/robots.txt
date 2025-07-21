@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /auction/AuctionHome/
+Allow: /page/InfoDoc/
+Allow: /search/Djs/
+Allow: /page/Watch/?ThePage=3&Home
+Allow: /page/Watch/?ThePage=5&About
+Allow: /page/Watch/?ThePage=13&Links
+Allow: /page/Watch/?ThePage=4&Disclaimer
+Allow: /cms/StartCms/
+
+Bot: *
+#Navigator: @lang.@version.@domain.@extention
+Allow: nl.djdb.be
+Allow: es.djdb.be
+Allow: ru.djdb.be
+Allow: fr.djdb.be
+Allow: en.djdb.be
+Allow: djdb.be/robots.txt
+
+Disallow: */users/Login/
+Disallow: */users/Profile/
+Disallow: */users/Register/              

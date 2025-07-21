@@ -1,0 +1,7 @@
+%title.pre.transtate%
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="translatetolang" >%page_langlocale% * :</label>
+    <select class="col-sm-3 text-right" name="translatetolang" size="1" >
+       %page_langlocales->value%
+    </select>
+</div>  

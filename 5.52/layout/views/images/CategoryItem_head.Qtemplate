@@ -1,0 +1,7 @@
+<table class="standard" >
+<tr >
+    <td><img src="%layoutpath->value%icons/r/right.svg" class="svg global" height="10" width="10" alt="%alt.nomsg%" /></td>
+    <td>
+        <a href="%path.module->value%/" >%start%</a>
+    </td>
+</tr>

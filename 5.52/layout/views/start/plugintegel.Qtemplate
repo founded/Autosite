@@ -1,0 +1,54 @@
+<div class="tegel %STATUS->value% equally" onmouseover="mytooltip_show('tooltip-%i->value%','item-%i->value%');" onmouseout="mytooltip_hide('tooltip-%i->value%');" >
+ <h3>%key->value%</h3>
+  <div class=" %STATUS->value%" id="item-%i->value%" >
+   <!--img height="15" width="15" src="%path.layout->value%/img/%key->value%.jpg"  alt="%key->value%" /-->
+   <img height="75" width="75" src="%path.layout->value%img/icons/%TYPE->value%.svg" alt="%inmenu%" >
+   <a href="%path.install->value%/%location->value%/%name->value%/" >%view%</a>
+  </div>
+  <h3>%imputDate->value%</h3>
+  <span class="checked" >
+       <a href="%path.install->value%/start/Install/?reset=%key->value%" >
+            <label><img height="15" width="15" src="%path.layout->value%img/icons/r/refresh.svg" alt="%refresh%" ></label>
+       </a>
+  </span>
+  <span class="checked" >
+   <input class="checkbox" type="checkbox" id="ispublic[%location->value%][%name->value%]" name="ispublic[%location->value%][%name->value%]" %PUBLIC->value%>
+    <label for="ispublic[%location->value%][%name->value%]" >
+     <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%ispublic%" >
+    </label>
+  </span>
+  <span class="checked" >
+   <input class="checkbox" type="checkbox" id="inmenus[%location->value%][%name->value%]" name="inmenus[%location->value%][%name->value%]" %MENU->value%>
+   <label for="inmenus[%location->value%][%name->value%]" >
+    <img height="15" width="15" src="%path.layout->value%img/icons/m/menu.svg" alt="%inmenu%" >
+   </label>
+  </span>
+  <span class="checked" >
+       <a href="%path.install->value%/start/Install/?cancel=%key->value%" >
+            <label><img height="15" width="15" src="%path.layout->value%img/icons/c/cancel.svg" alt="%refresh%" ></label>
+       </a>
+  </span>
+  <span class="checked %upgradelayout->value%" >
+       <a href="%path.install->value%/start/Install/?upgrade=%key->value%" >
+            <label><img height="15" width="15" src="%path.layout->value%img/icons/h/hammer.svg" alt="%upgrade%" ></label>
+       </a>
+  </span>
+  
+  <div id="tooltip-%i->value%" class="mytooltip equally" ><!--visual hidden-->
+  <fieldset class="tools" >
+   <a class="isstallitem" href="./?view=%id->value%" >
+    <img height="25" width="25" src="%path.layout->value%img/icons/v/view.svg" alt="%edit.this.item%" >
+   </a>
+   <a class="isstallitem" href="./?edit=%id->value%" >
+    <img height="25" width="25" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit.this.item%" >
+   </a>
+   <a class="isstallitem" href="./?delete=%id->value%" >
+    <img height="25" width="25" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+   </a>
+   
+   
+   <legend>%tools%</legend>
+  </fieldset>
+  %shortcomment->value%
+  </div>
+</div>

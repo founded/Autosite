@@ -1,0 +1,10 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+    	<li><a href="./?filters" class="btn btn-info pull-right" >%amail.boxcleaner.filters%</a></li>
+    	<li><a href="./?addAmailboxfilter" class="btn btn-info pull-right" >%amail.boxcleaner.addAmailboxfilter%</a></li>
+		<li><a href="./?categorys" class="btn btn-info pull-right" >%amail.boxcleaner.filtercategorysummary%</a></li>
+        <li><a href="./?scanmybox" class="btn btn-info pull-right" >%amail.boxcleaner.scanmybox%</a></li>
+        <li><a href="%path.install->value%/users/Profile/?addmailacc" class="btn btn-info pull-right" >%amail.boxcleaner.addmailbox%</a></li>
+        <li><a href="./?mailboxsummary" class="btn btn-info pull-right" >%amail.boxcleaner.mailboxsummary%</a></li>
+    </ul>
+</span>

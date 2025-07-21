@@ -1,0 +1,6 @@
+<a class="editorbtn form" 		href="javascript:setvisible('forms')" 				id="form" >%editor.formitems%</a> 
+<a class="editorbtn symbol" 	   href="javascript:setvisible('charmap')" 				id="symbol" >%editor.symbool%</a> 
+<a class="editorbtn image" 		href="javascript:doWYSIWYG('InsertImage', true)" 	id="image" >%editor.image%</a> 
+<a class="editorbtn flash" 		href="javascript:setvisible('flashPop')" 			id="flash" >%editor.flash%</a> 
+<a class="editorbtn addHTML"	   href="javascript:setvisible('htmlQuickTagPop')" 		id="addHTML" >%editor.addHTML%</a>
+<a class="editorbtn table" 		href="javascript:setvisible('tables')" 				id="table" >%editor.table%</a>

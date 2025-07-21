@@ -1,0 +1,9 @@
+<div>
+<table class="standard translator" >
+    <tr>
+        <th> %translate_from% </th>
+        <th> %tools% </th>
+        <th> %external% </th>
+        <th> %actual translation% </th>
+        <th> %new translation% </th>
+    </tr>

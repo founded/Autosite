@@ -1,0 +1,8 @@
+            <li class="lineitem" ><a href="./" class="content plannav" >%painthome%</a></li>
+            <li class="lineitem" ><a href="./?addgroup" class="content plannav" >%addgroup%</a></li>
+            <li class="lineitem" ><a href="./?groups" class="content plannav" >%groups%</a></li>
+            <li class="lineitem" ><a href="./?addpainting" class="content plannav" >%addpainting%</a></li>
+            <li class="lineitem" ><a href="./?paintings" class="content plannav" >%paintings%</a></li>
+            <li class="lineitem" ><a href="./?nofoto" class="content plannav" >%paintings% %no.picture%</a></li>
+            <li class="lineitem" ><a href="./?promoted" class="content plannav" >%promoted% %paintings% </a></li>
+            <li class="lineitem" ><hr></li>

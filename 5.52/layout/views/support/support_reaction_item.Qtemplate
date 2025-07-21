@@ -1,0 +1,15 @@
+<li>
+    <div class="%chattxt->value%" >
+        <fieldset >
+        <div class="row" >
+            <span class="col-lg-8" >
+                %detail->value%
+            </span>
+            <span class="col-lg-3" >
+                <br> <a href="%path.install->value%/users/VisiteUser?view=%accound_id->value%" >%view.user%</a>
+                <br>%inputdate->value%
+            </span>
+        </div>
+    </fieldset>
+    </div>
+</li>

@@ -1,0 +1,14 @@
+<script type="text/javascript" >
+function mytooltip_show(tooltipId, parentId){
+    it = document.getElementById(tooltipId);
+    if ((it.style.top==''||it.style.top == 0)&&(it.style.left==''||it.style.left==0)){
+        theSender=document.getElementById(parentId);
+        it.style.top=(theSender.offsetHeight/18,5+theSender.offsetTop)+'px';
+        it.style.left=(theSender.offsetWidth/1+theSender.offsetLeft)+'px';
+    }
+    it.style.visibility='visible';
+}
+function mytooltip_hide(id){
+    document.getElementById(id).style.visibility='hidden';
+}
+</script>

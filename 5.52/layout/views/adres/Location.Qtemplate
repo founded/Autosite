@@ -1,0 +1,4 @@
+	<span class="p100 mimenav" >
+<a href="./?find" class="content nav" >%find%</a>
+<a href="./?summary" class="content nav" >%summary%</a>
+	</span>

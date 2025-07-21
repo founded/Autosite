@@ -1,0 +1,11 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        	<li><a href="./?notActivated" class="btn btn-info pull-right" >%not.activated%</a></li>
+            <li><a href="./?notFollows" class="btn btn-info pull-right" >%not.follow%</a></li>
+        	<li><a href="./?reports" class="btn btn-info pull-right" >%reports%</a></li>
+        	<li><a href="./?lastactions" class="btn btn-info pull-right" >%lastactions%</a></li>
+        	<li><a href="./?lastlogins" class="btn btn-info pull-right" >%lastlogins%</a></li>
+        	<li><a href="./?usersaccess" class="btn btn-info pull-right" >%usersaccess%</a></li>
+        	<li><a href="./?searchAccound" class="btn btn-info pull-right" >%search%</a></li>
+    </ul> 
+</span>

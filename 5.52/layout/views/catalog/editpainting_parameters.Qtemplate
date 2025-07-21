@@ -1,0 +1,5 @@
+<div class="form-group" > 
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="parameter[%parameter_id->value%]" >%parameter% :%keyname->value%</label>
+        <input id="parameter[%parameter_id->value%]" onclick="settextselectedfield('parameter[%parameter_id->value%]')" type="text" class="input-sm col-sm-3 text-right" name="parameter[%parameter_id->value%]" value="%value->value%" required >
+        <span class="input_info" >%input_info.required%:%input_info.parameter%</span>
+</div>

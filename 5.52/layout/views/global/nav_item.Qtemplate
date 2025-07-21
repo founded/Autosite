@@ -1,0 +1,1 @@
+<li><a href="%nav->value%" class="%class->value%" >%nav.title->value%</a></li>

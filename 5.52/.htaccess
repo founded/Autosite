@@ -1,0 +1,26 @@
+﻿AddDefaultCharset utf-8
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([A-Za-z0-9\.]+)(\.php)$ ./?loc=page&action=HTTP403
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9\.]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)!(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ ./?loc=$1&action=$2
+RewriteRule ^([A-Za-z0-9\.]+)!(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ ./$1/
+RewriteRule ^([A-Za-z0-9\.]+)/$ ./?loc=$1
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9\.]+)!(\.css|\.js|\.png|\.jpg|\.gif|\.svg|robots\.txt)$ ./$1/$2/
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9]+)$ ./$1/$2/$3
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9\.]+)/$ ./?loc=$1&action=$2&%{QUERY_STRING}
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9\.]+)/([A-Za-z0-9]+)!(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ ./?loc=$1&action=$2
+RewriteRule ^([A-Za-z0-9\.]+)/([A-Za-z0-9\.]+)/([A-Za-z0-9]+)/([A-Za-z0-9]+)!(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ ./?loc=$1&action=$2
+
+#ErrorDocument 400 /page/HTTP400
+#ErrorDocument 401 /page/HTTP401
+#ErrorDocument 403 /page/HTTP403
+#ErrorDocument 404 /page/HTTP404
+#ErrorDocument 500 /page/HTTP500
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,6 @@
+<div class="details p100 %row->value%" >  
+    <span>%key->value% %value->value% %TYPE->value%
+    <a class="cronitem pull-right" href="./?cron=%cron_id->value%&deleteparam=%key->value%" >
+        <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" />
+    </a></span>
+</div>

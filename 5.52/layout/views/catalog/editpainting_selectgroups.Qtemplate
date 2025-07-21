@@ -1,0 +1,1 @@
+<option value="%group_id->value%" %isselected->value% >%name->value%</option>

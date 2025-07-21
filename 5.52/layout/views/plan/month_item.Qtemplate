@@ -1,0 +1,27 @@
+<div class="Callendar_month_item %status->value%" onmouseover="mytooltip_show('tooltip-%Imonth->value%','item-%Imonth->value%');" onmouseout="mytooltip_hide('tooltip-%Imonth->value%');" >
+    <span class="status " id="item-%Imonth->value%" >
+        <span class="bar" >
+            <a class="baritem" href="%path.install->value%/plan/Week/?add&year=%Y->value%&month=%m->value%&day=%Imonth->value%" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/a/add.svg" alt="%Callendar.add%" />
+            </a>
+            <br>
+            <a class="baritem" href="%path.install->value%/plan/Week/?view&year=%Y->value%&month=%m->value%&day=%Imonth->value%" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/v/view.svg" alt="%view.this.item%" />
+            </a>
+            <br>
+            <a class="baritem" href="%path.install->value%/users/ProfileEvaluationBoard/?evaluate&year=%Y->value%&month=%m->value%&day=%Imonth->value%" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/f/fi-clipboard-pencil.svg" alt="%evaluate.item%" />
+            </a>
+            <br>
+            <a class="baritem" href="%path.install->value%/users/IncidentsLog/?log&year=%Y->value%&month=%m->value%&day=%Imonth->value%" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/a/award.svg" alt="%log.item%" />
+            </a>
+            <br>
+        </span>
+        <h2>%Imonth->value%</h2>
+    </span>
+    <span class="items" > %items_small->value% </span>
+    <div id="tooltip-%Imonth->value%" class="mytooltip %tooltip->value%" ><!--visual hidden-->
+        %items_detail->value%
+	</div>
+</div>

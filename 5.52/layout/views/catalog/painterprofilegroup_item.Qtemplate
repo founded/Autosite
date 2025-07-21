@@ -1,0 +1,14 @@
+<div class="%row->value% p100" >
+  <a href="./?editgroup=%id->value%" class="btn btn-controls" >
+  <img height="30" width="30" src="%path.layout->value%img/icons/e/edit.svg" alt="%group.edit%" />
+ </a>
+  <table class="p100" >
+    <tr>
+    	<td>%group% :%name->value%</td>
+        <td>%groupinfo->value% </td>
+            
+    </tr>
+  </table>
+
+        
+</div>

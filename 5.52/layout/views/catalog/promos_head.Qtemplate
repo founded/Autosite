@@ -1,0 +1,4 @@
+<h2>%welcome% LUDinART</h2>
+<script language="JavaScript" >
+		products = new Array();//array van de figuren
+ 		products.push('%path.layout->value%img/logo.new.gif');

@@ -1,0 +1,8 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        <li><a href="./?add" class="btn btn-info pull-right" >%add%</a></li>
+        <li><a href="./?check" class="btn btn-info pull-right" >%check%</a></li>
+        <li><a href="./?log" class="btn btn-info pull-right" >%log%</a></li>
+        <li><a href="./?summary" class="btn btn-info pull-right" >%summary%</a></li>
+    </ul> 
+</span>

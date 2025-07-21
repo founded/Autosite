@@ -1,0 +1,7 @@
+<li class="pluginitem_li %color->value%" >
+  <span class="col-lg-1 col-md-1 col-sm-1 col-xs-1" > %isinstalled->value% </span> 
+  <select class="col-lg-1 col-md-1 col-sm-1 col-xs-1" size="1" name="installs[%location->value%][%name->value%]" > %installoptions->value% </select>
+  <label class="col-lg-1 col-md-1 col-sm-1 col-xs-1" for="installs[%location->value%][%name->value%]" > %name->value% </label>
+  <span class="col-lg-5 col-md-5 col-sm-5 col-xs-6" > %msg->value% </span>
+  <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3" > %lblcompactible->value% %iscompactible->value%[%moduleversion->value%] </span>
+</li>

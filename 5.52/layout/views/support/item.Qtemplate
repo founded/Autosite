@@ -1,0 +1,28 @@
+<div>
+    <span class="col-lg-8 col-md-8 col-sm-9 col-xs-9" >
+           <p class="attention" > %location->value% |%url%:%url->value% | %status%(%STATUS->value%)</p>
+           <p> %title->value% </p>
+           <br>
+           <span class="col-lg-5 col-md-5 col-sm-10 hidden-xs" >
+               <p>%shortcomment->value%</p>
+               %imputDate->value%
+           </span>
+           <span class=" col-sm-10 hidden-xs" >  </span>
+           <detail>x %detail->value%</detail>
+    </span>
+    <span class="col-lg-3 col-md-3 col-sm-2 col-xs-2" >
+            <br><br>
+            <span class="col-lg-5 col-sm-2 col-xs-5" >
+                <br> 
+                <a class="ticketitem" href="./?view_ticket=%id->value%" >
+                    <img  height="27" width="27" src="%path.layout->value%img/icons/d/detail.svg"  alt="%detail%" />
+                </a>
+                <a class="ticketitem" href="./?delete=%id->value%" >
+                    <img  height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg"  alt="%delete%" />
+                </a>
+            </span>
+            <span class="attention col-lg-12 hidden-md hidden-sm hidden-xs" >
+                
+            </span>
+    </span> 
+</div>

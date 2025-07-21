@@ -1,0 +1,23 @@
+<div class="dayitem %row->value%" >
+ <div class="timelabel col-lg-1 col-md-1 col-sm-1 col-xs-1" >
+  <span class="month" >%m->value% </span> 
+   <span class="day" >%d->value%</span> 
+   <span class="year" >%Y->value%</span>
+  </div> 
+ <a href="./?view=%id->value%" >
+ <span class="col-lg-6 col-md-6 col-sm-6 col-xs-9 day_item" >
+   <p class="attention" >%namekey->value% | -- | -- </p>
+   <p>%TYPE->value% </p>
+   <p>%from% %start->value% </p>
+   <p>%to% %end->value% </p>
+  </span>
+ </a>
+  <span class="col-lg-3 col-md-3 col-sm-2 col-xs-2" >
+   <a class="baritem" href="./?edit&id=%id->value%" ><img height="15" width="15" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit.this.item%" /> </a>
+   <a class="baritem" href="./?detail&id=%id->value%" ><img height="15" width="15" src="%path.layout->value%img/icons/v/view.svg" alt="%view.this.item%" /> </a>
+   <a class="baritem" href="./?delete&id=%id->value%" ><img height="15" width="15" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete.this.item%" /> </a>
+   <a class="baritem" href="./?accound_id=%accound_owner_id->value%" ><img height="15" width="15" src="%path.layout->value%img/icons/u/user.svg" alt="%view.profile%" /> </a>
+  </span>
+  <span class="col-lg-8 col-md-12 hidden-sm hidden-xs" >%images->value%</span>
+</div>
+<br>

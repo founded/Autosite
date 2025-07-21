@@ -1,0 +1,1 @@
+<input type="button" class="keybtn btngrey keylarge" value="%backspace%" name="backspace" id="backspace" onclick="keyboardbackspace()" >

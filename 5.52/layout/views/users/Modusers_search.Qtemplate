@@ -1,0 +1,3 @@
+    <label class="control-label col-lg-3 col-md-3 col-sm-3" for="findmember" >%term% :</label>
+    <input onclick="settextselectedfield('findmember')" class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" list="findmember_Acomplete_list" type="text" name="findmember" id="findmember" value="%findmember->value%" autocomplete="off" required autofocus >
+    <datalist id="findmember_Acomplete_list" ></datalist>

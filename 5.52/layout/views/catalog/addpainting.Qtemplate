@@ -1,0 +1,40 @@
+<span>
+	<div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="name" >%name% :</label>
+        <input id="name" onclick="settextselectedfield('name')" type="text" class="input-sm col-sm-3 text-right" name="name" value="%name->value%" required >
+        <span class="input_info" >%input_info.required%:%input_info.paintingname%</span>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="group_id" >%Paintinggroups% :</label>
+        <select class="col-sm-3 text-right" name="group_id" size="1" >
+           %groups->value%
+        </select><a href="%path.install->value%/catalog/PainterProfile/?addgroup" title="%addgroup.altinfo%" ><b>+</b></a>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="paintingsize" >%painting.size% :</label>
+        <span class="editselect" >
+			<select class="col-sm-3 text-right" onchange="this.nextElementSibling.value=this.value" name="sizeparameter" size="1"  >
+	           %sizes->value%
+	        </select>
+	        <input id="paintingsize" onclick="settextselectedfield('paintingsize')" type="text" name="paintingsize" value="%paintingsize->value%" >       
+        </span>
+    </div>
+    <div class="form-group" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="shortcomment" >%comment%</label>
+          <textarea cols="55" rows="7" wrap="virtual" class="input-sm col-sm-3 text-right " maxlength="100" name="shortcomment" id="comment" >%shortcomment->value%</textarea>        
+	    
+    </div>
+    <div class="form-group" >
+          <label class="control-label col-lg-4 col-md-4 col-sm-4" for="detail" >%detail%</label>
+          <textarea cols="65" rows="7" wrap="virtual" class="input-sm col-sm-3 text-right" name="detail" id="detail" >%detail->value%</textarea>
+        
+    </div>
+    <center>
+	    <div class="onoff" >
+	        <input class="checkbox col-lg-1" type="checkbox" id="PROMOTE" name="PROMOTE" %PROMOTE->value% />
+	        <label class="col-lg-1" for="PROMOTE" >
+	            <img height="15" width="15" src="%path.layout->value%/img/icons/f/favorite.svg" alt="%PROMOTE.info%" />
+	        </label>
+        </div>
+   </center>
+   

@@ -1,0 +1,19 @@
+<a href="./?Icons=%key->value%" >
+    <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10mm" height="10mm" >
+        <defs>
+          <path id="pathright" d="M 0 18 25 18"   fill="none"  />
+        </defs>
+        <path
+         style="fill:#FFFF00;fill-opacity:1;fill-rule:evenodd;stroke:#caab15;stroke-width:0.61685663;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.47976882"
+         d="M 1.8234331,20.780363 C 0.53442143,6.0452183 0.6361302,6.1643722 0.6361302,6.1643722 c 0,0 -0.5357191,-3.1961036 1.2054133,-3.2876518 1.7411312,-0.091549 6.6625125,-0.11887 6.8922544,-0.1229688 0.2297419,-0.0041 0.6752954,-0.035756 1.4355321,1.2445558 0.319846,0.5386511 1.504688,0.3965469 1.504688,0.3965469 L 21.828606,4.2136801 c 0,0 1.265357,-0.259265 1.460064,1.5465383 0,0 0.528687,5.4968086 0.634691,7.2467796 0.03315,0.546915 0.327394,2.897398 0.534779,6.583235 0.06239,1.108629 -0.38457,2.063319 -1.119741,2.076435 -0.735175,0.01312 -19.1047057,0.461827 -20.161518,0.480684 -1.1581121,0.02066 -1.353449,-1.366988 -1.353449,-1.366988 z"
+         id="path4175"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccsssccsssssc" />
+          <use xlink:href="#pathright" fill="none" stroke="none"/>
+          <text font-family="sans-serif" font-size="15" fill="#666699" >
+            <textPath xlink:href="#pathright" startOffset="8" >
+               <tspan fill="#999" >%key->value%</tspan>
+            </textPath>
+          </text>
+    </svg>
+</a>

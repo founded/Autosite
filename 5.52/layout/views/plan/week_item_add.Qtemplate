@@ -1,0 +1,66 @@
+<span>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="namekey" >%namekey% :</label>
+  <input type="text" id="" onclick="settextselectedfield('namekey')" class="input-sm col-sm-3 text-right" name="namekey" value="%namekey->value%" required >
+  <span class="input_info" >%input_info.required%:%input_info.namekey%</span>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="TYPE" >%calendar_access% :</label>
+  <select class="col-sm-3 text-right" name="TYPE" size="1" >
+     %types->value%
+  </select>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="calendar_category" >%calendar_category% :</label>
+  <select class="col-sm-3 text-right"  name="calendar_category" size="1" >
+     %calendar_categorys->value%
+  </select>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="from" >%from% :</label>
+  <!-- @HIDEHTML comment by use browser with real html standards-->
+  <input type="text" onclick="settextselectedfield('from')" id="from" class="datepicker input-sm col-sm-3 text-right" name="from" value="%from->value%" pattern="[0-9]{2,4}-[0-9]{2}-[0-9]{2,4}$" required >
+  
+  <!-- @REALHTML uncomment by use browser with real html standards
+  <input type="date" id="from" onclick="settextselectedfield('from')" class="datepicker input-sm col-sm-3 text-right" name="from" value="%from->value%" pattern="[0-9]{2,4}-[0-9]{2}-[0-9]{2,4}$" required >
+  -->
+  <span class="input_info" >%input_info.required%:%input_info.fromdate%</span>
+		<script type="text/javascript" >
+			$(function(){
+				$('*[name=from]').appendDtpicker({
+					"inline": true,
+					"locale": "en",
+					"dateOnly": true
+				});
+			});
+		</script>
+  <br><br>
+  <p>%usebackup.b%%b.incompactible.badbrowser%</p>
+  <!-- @REALHTML uncomment by use browser with real html standards
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="start" >%start% (24h:60m):</label>
+  <input type="time" id="start" class="input-sm col-sm-3 text-right" placeholder="hrs:m" name="start" value="%start->value%" pattern="[0-9]{1,2}:[0-9]{1,2}(:[0-9]{1,2})?$" required >
+  <span class="input_info" >%input_info.required%:%input_info.fromtime%</span>
+  -->
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="start" >%badbrowsers.field% %start%(24h:60m)::</label>
+  <input type="text" id="" onclick="settextselectedfield('start')" id="start" class="input-sm col-sm-3 text-right" placeholder="hrs:m" name="start" value="%start->value%" pattern="[0-9]{1,2}:[0-9]{1,2}(:[0-9]{1,2})?$" >
+  <span class="input_info" >%input_info.required%:%input_info.fromtime%</span>
+ </div>
+ <div class="form-group" >
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="to" >%to% %to->value%:</label>
+  <!-- @HIDEHTML comment by use browser with real html standards (time != timepoint) duringtime is also time 00:00->23:59 -->
+  <input id="to" onclick="settextselectedfield('to')" value="%to->value%" type="text" class="input-sm col-sm-3 text-right" name="to" pattern="[0-9]{2,4}-[0-9]{2}-[0-9]{2,4}$" autocomplete="off"  >
+  <!-- @REALHTML uncomment by use browser with real html standards
+  <input id="to" value="%to->value%" type="date" class="input-sm col-sm-3 text-right" name="to" pattern="[0-9]{2,4}-[0-9]{2}-[0-9]{2,4}$" autocomplete="off" >
+  -->
+  <span class="input_info" >%input_info.required%:%input_info.fromtime%</span>
+  <br><br>
+  <!-- @REALHTML uncomment by use browser with real html standards
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="end" >%end% (24h:60m) :</label>
+  <input type="time" id="end" onclick="settextselectedfield('end')" class="input-sm col-sm-3 text-right" placeholder="hrs:m" name="end" value="%end->value%" pattern="[0-9]{1,2}:[0-9]{1,2}(:[0-9]{1,2})?$" >
+  <span class="input_info" > %input_info.required%:%input_info.fromtime% </span>
+  -->
+  <label class="control-label col-lg-4 col-md-4 col-sm-4" for="end" >%badbrowsers.bacupfield% %end% :</label>
+  <input type="text" id="end" onclick="settextselectedfield('end')" class="input-sm col-sm-3 text-right" placeholder="hrs:m" name="end" value="%end->value%" pattern="[0-9]{1,2}:[0-9]{1,2}(:[0-9]{1,2})?$" >
+  <span class="input_info" >%input_info.required%:%input_info.fromtime%</span>
+ </div>
+</span>

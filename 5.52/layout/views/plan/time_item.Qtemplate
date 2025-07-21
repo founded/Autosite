@@ -1,0 +1,12 @@
+<div class="time_item %status->value% col-lg-1 col-md-1 col-sm-1 col-xs-1" style="background-image:%path.layout->value%img/icons/e/eye.svg;" >
+  <div>
+    <a href="%path.module->value%?add&year=%Y->value%&month=%m->value%&day=%Iweek->value%&hour=%time_item_hour->value%" title="%plan.day.detail% %Iweek->value%-%m->value%-%Y->value%" >
+      <span>%time_item_hour->value%</span>
+    </a>
+    <span class="hidden-sm hidden-xs" >
+     <ul>
+      %items->value%
+     </ul> <br>
+     </span>
+  </div>
+</div><br />

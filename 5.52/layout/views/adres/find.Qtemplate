@@ -1,0 +1,11 @@
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="q" >%term% :</label>
+        <input class="input-sm col-lg-3 col-md-3 col-sm-3 text-right" list="q_Acomplete_list" type="text" name="q" id="q" onclick="settextselectedfield('q')" value="%q->value%" autocomplete="off" required >
+        <datalist id="q_Acomplete_list" ></datalist>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="section" >%section% :</label>
+        <select class="col-sm-3 text-right"  name="section" size="1" >
+           %sections->value%
+        </select>
+    </div>

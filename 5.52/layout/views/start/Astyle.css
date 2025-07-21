@@ -1,0 +1,215 @@
+.sitemaplabel{
+    width:500px;
+}
+.pluginitem_li li{
+    min-height:100px;
+}
+.sitemaplabel{
+	min-width: 250px;padding: 5px 0px 0px 5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.linksblock+div{
+    margin:0px ;padding: 0px;
+        font-size: 16px;
+    line-height: 20px;
+}
+.linksblock {
+    min-width: 275px;min-height: 250px;
+    display:inline-block;margin:2px ;padding: 0px 10px 10px 10px; border-radius:30px 30px 10px 10px;
+    border: 1px solid;border-color: #000077;
+	vertical-align:top;
+    box-shadow: 0px 0px 6px  #88BBEE, 0 25px 35px #E7F3F2 inset;
+    -moz-transition: padding .25s; 
+    -webkit-transition: padding .25s; 
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+.linksblock h3 {
+    border-bottom: 1px solid #396715;
+    border-color: #396715;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    width: 100%;
+}
+.linksblock h3{text-align:center;width: 100%;padding:0px 0px 20px 0px;
+	vertical-align:top;text-transform:uppercase;border-bottom:1px solid;border-color: #396715;
+    font-size: 14px;font-weight:bold;line-height: 14px;
+}
+#install{
+    background-color:#9999AA;color:#FFF;display:block; 
+    border-color:#424542;padding:25px;position:absolute;
+}
+#install ul{
+	margin:0px;list-style:none;background-color: #ddeeff;
+    border-width:2px;border-style:solid;border-color:#FFF;-webkit-border-radius:7px;border-radius:7px;
+}
+#install ul{/* menu hidden */
+	display:none;position:absolute;left:100%;top:0;
+    -webkit-box-shadow:4px 4px 5px #000000;
+    box-shadow:4px 4px 5px #000000;
+}
+.pluginitem>ul,.pluginitem>li{
+    min-width:100px;color:#000;
+    font-size:16px;font-weight:bold;font-family: 	Helvetica,?sans-serif;
+    background:#DDDDEE;
+    border-radius: 3px; 
+    border: 1px solid;
+    border-color: #D0D0D0;
+}
+
+#install li:hover>*{
+	display:block;
+}
+#install li{
+	position:relative;display:block;margin: 10px;
+    width:200px;
+    min-height:45px;
+    border-radius:7px;-webkit-border-radius:7px;
+}
+.pluginitem_li{
+    min-width:940px;color:#000; z-index:99;
+	margin: 10px auto;padding: 10px;min-height:40px;    
+}
+#consol_output pre{/* repair from xdebug.css and use of menu*/
+    z-index:95;
+}
+.pluginitem_li div{
+	margin: 1px auto;padding: 1px 10px;
+    min-height:40px;
+}
+#install  li:hover>ul{/* repair browser bug focus from input select by hover , trouble with selectionlist ? works not always somebrowser lost hover when in selectlist */
+    z-index:98; padding-bottom:50px;
+}
+
+#install{  left:1px;display:inline-block;
+           box-shadow: 0px 0px 3px  #88BBEE, 0 5px 15px #E7F3F2 inset;
+           color: #eee;
+           padding: 10px 10px 1000px 10px;
+           margin:0px 0px 3px 10px;
+           text-align: center;
+           border-radius: 22px 22px 3px 3px;
+		   width:220px;vertical-align:top; margin: 10px;
+           font-size: 14px;
+}
+#install>li{
+	margin:3px 0 0;
+}
+#install a:active, #install a:focus{
+}
+#install a{color: #333333;background-color:#9999AA;
+	display:block;vertical-align:top;text-align:left;
+    cursor:pointer;padding:10px;
+    border-width:2px 0 0  1px ;border-style:solid;border-color:#333333;
+    border-radius:4px;-webkit-border-radius:4px;
+}
+.installed{background-color:#00FF00;}
+#install ul li{
+	float:none;margin:3px 0 0;}
+#install ul a{
+	text-align:left;border-radius:4px;-webkit-border-radius:4px;
+    
+}
+#install li:hover>a,#install li a.pressed{
+	background-color:#99CCFF;border-style:solid;
+}
+#container{     padding-bottom: 150px;}
+.select-small select{     width: 90px;}
+
+#packages{
+    left: 25px;
+    right: 25px;
+    display:inline-block;
+	vertical-align:top;border-radius: 18px 18px 3px 3px;
+    padding:5px 20px 5px 25px;margin: 10px 0px 10px 10px;
+}
+#packages h3{
+    background-color:#808080;
+    color: #eee;
+    padding: 7px 0px;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #777;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+#packages .tegel{     
+    display: inline-block;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    width: 230px;
+    text-align: center;
+}
+#packages a{
+    line-height: 10px;
+    color: #333;
+}
+#packages .mytooltip{
+    text-align: left;
+}
+#packages .ok{     
+    background-color:#CCFFCC;
+}
+#info h3{
+    background-color:#808080;
+    color: #eee;
+    padding: 7px 0px;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #777;
+    font-size: 14px;
+    font-weight:bold;
+}
+#info .tegel{     
+    display: inline-block;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    width: 230px;
+    text-align: center;
+}
+.ACTIVE{
+    background-color:#CCFFCC;
+    color:#606060;
+}
+.PROGRESS{
+    background-color:#FAE35B;
+    color:#3366FF;
+}
+#consol_output{     
+   width:75%;
+    border-color:#424542;margin-left:250px;display: inline-block; position:relative;
+}
+#info .equally{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-top: 4px solid black;
+    font-size: 18px;
+    background: #E59B05;
+    display: block;
+    z-index: 999;
+    overflow: hidden;
+}
+#info .odd{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-top: 4px solid black;
+    font-size: 18px;
+    background: #DB5DBA;
+    display: block;
+    z-index: 999;
+    overflow: hidden;
+}
+.NEEDUPGRADE{
+    border-top: 1px solid black;
+    background: #DB5DBA;
+}

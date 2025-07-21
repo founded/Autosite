@@ -1,0 +1,18 @@
+<li>
+    <div class="%chattxt->value%" >
+        <fieldset >
+        <div class="row" >
+            <span class="col-lg-8" >
+                %detail->value%
+            </span>
+            <span class="col-lg-3" >
+                <br> <a href="./?viewalloff&accound=%accound_id->value%" class="pull-right" >%user.viewallitems% %username->value%</a>
+                <br> <a href="./?viewalloff&ip=%ip->value%" class="pull-right" >%user.ip% %username->value%</a>
+                <br> <a href="%path.install->value%/users/ModUsers/Lookup?ip=%ip->value%" >%ip%</a>
+                <br> <a href="%path.install->value%/users/VisiteUser/?view=%accound_id->value%" >%view.user%</a>
+                <br>%inputdate->value%
+            </span>
+        </div>
+    </fieldset>
+    </div>
+</li>

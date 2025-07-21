@@ -1,0 +1,31 @@
+<a class=" %row->value%" href="./?view=%id->value%" >
+ <span class="col-lg-11" >        
+    <span class="col-lg-8 title" >%key->value%</span><span class="col-lg-4" >%status% : %STATUS->value%</span>
+ </span>
+</a>
+<span class="col-lg-11" >
+    <span class="col-lg-2" >
+       <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="inmenus[%location->value%][%name->value%]" name="inmenus[%location->value%][%name->value%]" %MENU->value% >
+            <label class="col-lg-1" for="inmenus[%location->value%][%name->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/m/menu.svg"  alt="%inmenu%" >
+            </label>
+        </div>
+    </span>
+    <span class="col-lg-2" >
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="ispublic[%location->value%][%name->value%]" name="ispublic[%location->value%][%name->value%]" %PUBLIC->value% >
+            <label class="col-lg-1" for="ispublic[%location->value%][%name->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%ispublic%" >
+            </label>
+        </div>
+    </span>
+    <span class="col-lg-5" >
+       <span class="small" >
+            <label for="type[%location->value%][%name->value%]" > %type%</label>
+            <select class="select-small" size="1" name="type[%location->value%][%name->value%]" >
+            	  %types->value%
+            </select>
+       </span>
+    </span>
+</span>

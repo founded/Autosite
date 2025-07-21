@@ -1,0 +1,25 @@
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="accmailuser" >%mailuser% :</label>
+    <input type="text" id="accmailuser" onclick="settextselectedfield('accmailuser')" class="input-sm col-sm-4 text-right" name="accmailuser" autocomplete="off" value="%accmailuser->value%" required>
+    <span class="input_info" >%input_info.required%:%input_info.accmailuser%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="accemail" >%email% :</label>
+    <input type="email" id="accemail" onclick="settextselectedfield('accemail')" class="input-sm col-sm-4 text-right" name="accemail" value="%accemail->value%" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+    <span class="input_info" >%input_info.required%:%input_info.email%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="accpwx" >%accmailpassword% :</label>
+    <input type="text" id="accpwx" onclick="settextselectedfield('accpwx')" class="input-sm col-sm-4 text-right" name="accpwx" autocomplete="off" required>
+    <span class="input_info" >%input_info.required%:%input_info.accmailpassword%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="server_in" >%server_in% :</label>
+    <input type="text" id="server_in" onclick="settextselectedfield('server_in')" class="input-sm col-sm-4 text-right" name="server_in" autocomplete="off" required>
+    <span class="input_info" >%input_info.required%:%input_info.accmailserver_in%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="server_out" >%server_out% :</label>
+    <input type="text" id="server_out" onclick="settextselectedfield('server_out')" class="input-sm col-sm-4 text-right" name="server_out" autocomplete="off" required>
+    <span class="input_info" >%input_info.required%:%input_info.accmailserver_out%</span>
+</div>

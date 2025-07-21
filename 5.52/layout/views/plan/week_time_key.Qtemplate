@@ -1,0 +1,2 @@
+ <li><span class="time_i" >%i->value%</span> <span class="time_detail" > <a href="./?detail&id=%id->value%" >%namekey->value%</a> </span></li>
+ 

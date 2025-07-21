@@ -1,0 +1,58 @@
+<div class="%row->value% col-lg-12" >
+    <span class="col-lg-1" >
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='accound_enabled[%accound_id->value%]' name='accound_enabled[%accound_id->value%]' %isaccessibility->value% />
+            <label class="col-lg-1" for="accound_enabled[%accound_id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/a/accessibility.svg" alt="%accessibility%" />
+            </label>
+        </div>
+    </span>
+    <a  href="./?view=%id->value%" >
+    <span class="col-lg-2" > %images->value% </span>
+    <span class="col-lg-3" >%TYPE->value%|%name->value%|%email->value%</span>
+    <span class="col-lg-2" >
+        %accound.see%
+        <a href="%path.module->value%?infoAboutAccound=%accound_id->value%" > 
+            &#64;%username->value%</a> 
+            %lastonline%:%lastonline->value%  <br>
+            %imputdate%:%imputDate->value%  <br> 
+            %country->value% %city->value% 
+        </span>
+    </a>
+    <span class="col-lg-4" >
+       <a href="./?infoAboutAccound=%accound_id->value%" >
+            <img class="Bicon" src="%path.layout->value%img/icons/i/info.svg" alt="%infoAboutUser%" />
+       </a>
+       <a href="./?editAccound=%accound_id->value%" >
+            <img class="Bicon" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" />
+       </a>
+       <a href="%path.install->value%/users/Activate/?key=%key->value%" >
+            [check activation]
+       </a>
+       </br>
+       <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="mod_accoundvisible[%accound_id->value%]" name="mod_accoundvisible[%accound_id->value%]" %isvisible->value%>
+            <label class="col-lg-1" for="mod_accoundvisible[%accound_id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/a/accessibility.svg" alt="%ismodvisible%" />
+            </label>
+        </div>
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="mod_accoundfollow[%accound_id->value%]" name="mod_accoundfollow[%accound_id->value%]" %isfollow->value%>
+            <label class="col-lg-1" for="mod_accoundfollow[%accound_id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/f/favorite.svg" alt="%ismodfollow%" />
+            </label>
+        </div>
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="mod_accoundseeonchange[%accound_id->value%]" name="mod_accoundseeonchange[%accound_id->value%]" %ischangelookup->value%>
+            <label class="col-lg-1" for="mod_accoundseeonchange[%accound_id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/i/info.svg" alt="%ismodchangelookup%" />
+            </label>
+        </div>
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type="checkbox" id="mod_accoundlog[%accound_id->value%]" name="mod_accoundlog[%accound_id->value%]" %islog->value%>
+            <label class="col-lg-1" for="mod_accoundlog[%accound_id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/l/listview.svg" alt="%ismodlog%" />
+            </label>
+        </div>
+    </span>
+</div>

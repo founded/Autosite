@@ -1,0 +1,26 @@
+<div class="col-lg-12 col-md-10 col-sm-9 col-xs-9 %row->value%" >
+    <a class="phoneitem" href="./?view=%id->value%" >
+    <span class="col-lg-3 col-md-3 col-sm-3  col-xs-3" >
+        <div class="onoff" >
+            <input class="checkbox col-lg-1 col-md-1" type='checkbox' id='phonevisibility[%id->value%]' name='phonevisibility[%id->value%]'  %isVisable->value%  />
+            <label class="col-lg-1 col-md-1" for="phonevisibility[%id->value%]" >
+                <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%visibility%" />
+            </label>
+        </div>
+    </span>
+    <span class="col-lg-1 col-md-1 hidden-sm hidden-xs" >
+        <img  height="25" width="25" src="%path.layout->value%img/icons/%Phonetype->value%.jpg" />
+    </span>
+    <span class="col-lg-4  col-md-6 col-sm-6 col-xs-6" >
+            %Phone% : %Phonenr->value% 
+    </span>
+    </a>
+    <span class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
+       <a class="phoneitem" href="%path.install->value%/users/ContactInfo/?edit_phone=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" />
+       </a>
+       <a class="phoneitem" href="%path.install->value%/users/ContactInfo/?delete_phone=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" />
+       </a>
+    </span>
+</div>

@@ -1,0 +1,47 @@
+<div>
+ <span class="col-lg-12 col-md-5 col-sm-3 col-xs-5 %row->value% lineitem" >
+    <h4>
+        <span class="col-lg-2 col-md-5 col-sm-9 col-xs-8" >%STATUS->value%</span><span class="col-lg-9 col-md-5 col-sm-9 col-xs-3 title" >%id->value%|%title->value%</span>
+    </h4>
+    <a class="pageitem" href="./?view=%id->value%" >
+        <span class="col-lg-2 col-md-5 col-sm-4 col-xs-5" >
+           <br class="hidden-xs" > 
+           <div class="onoff" >
+                <input class="checkbox col-lg-1 col-md-1 col-sm-1 col-xs-1" type="checkbox" id="visibility[%id->value%]" name="visibility[%id->value%]" %isvisable->value% />
+                <label class="col-lg-1 col-md-1 col-sm-1 col-xs-1" for="visibility[%id->value%]" >
+                    <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg"  alt="%visibility%" />
+                </label>
+           </div>
+        </span>
+        <span class="col-lg-2 col-md-4 col-sm-9 col-xs-3" >
+            <br class="hidden-xs" > 
+            <img height="21" width="30" src="%path.layout->value%img/FLAGS/flag_%page_langlocale->value%.gif"  alt="%image%:%language% %locale% %page_langlocale->value%" />
+        </span>
+        <span class="col-lg-4 col-md-10 hidden-sm hidden-xs" >
+            <h4>%shortcomment->value% </h4>
+        </span>
+        <span class="col-lg-4 col-md-10 col-sm-9 hidden-xs" >
+                %imputDate->value%
+        </span>
+    </a>
+    <span class="col-lg-2 col-sm-9 col-xs-7" >
+        <br> 
+        <a class="auctionitem" href="%path.install->value%/images/IMGByUser/?bind=page&nr=%id->value%" >
+            <img height="30" width="30" src="%path.layout->value%img/icons/i/image.svg" alt="%addimages%" >
+        </a>
+        <a class="auctionitem" href="./?edit=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" >
+        </a>
+        <a class="auctionitem" href="./?delete=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+        </a>
+        <a class="auctionitem" href="./?userAll=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/u/user.svg" alt="%allofuser%" >
+        </a>
+        <a class="auctionitem" href="./?translate=%id->value%" >
+            <img height="27" width="27" src="%path.layout->value%img/icons/l/library2.svg" alt="%translate%" >
+        </a>
+    </span>
+    %access->value%
+ </span>
+</div>

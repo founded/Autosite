@@ -1,0 +1,39 @@
+<div class="tegel %STATUS->value% " >  
+    <h3><small >%url->value%</small></h3>
+    <div class=" %STATUS->value%"  id="item-%i->value%" >%info->value%</div>
+    <h3>%lastrun->value%</h3>
+    <a href="%path.module->value%?cron=%id->value%" >%detail%</a>
+    <h3>%REPETITION->value%/%STATUS->value%</h3>
+    <span class="checked" >
+     <input class="checkbox" type='checkbox' id='cronfollow[%id->value%]' name='cronfollow[%id->value%]' %isfollow->value% />
+     <label for="cronfollow[%id->value%]" >
+      <img height="15" width="15" src="%path.layout->value%img/icons/e/eye.svg" alt="%isfollow%" >
+     </label>
+    </span>
+    <span class="checked" >
+	    <a href="./?edit=%id->value%" >
+	    <label >
+	     <img height="20" width="20" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" >
+	     </label>
+	    </a>
+    </span>
+    <span class="checked" >
+	    <a href="./?deletecron=%id->value%" >
+	    <label >
+	     <img height="20" width="20" src="%path.layout->value%img/icons/d/delete.svg" alt="%delete%" >
+	    </label> 
+	    </a>
+    </span>
+    <span class="checked" >
+     <input class="checkbox" type='checkbox' id='cronenabled[%id->value%]' name='cronenabled[%id->value%]' %isenabled->value% />
+     <label for="cronenabled[%id->value%]" >
+      <img height="15" width="15" src="%path.layout->value%img/icons/g/gear.svg" alt="%isenabled%" >
+     </label>
+    </span>
+    <span class="checked" >
+        <input class="checkbox " type='checkbox' id='cronlogit[%id->value%]' name='cronlogit[%id->value%]' %islogit->value%  />
+        <label for="cronlogit[%id->value%]" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/d/doc-text.svg" alt="%islogit%" >
+        </label>
+    </span>
+</div>

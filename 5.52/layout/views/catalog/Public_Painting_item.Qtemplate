@@ -1,0 +1,24 @@
+<div class="%row->value%" id="paintingitem-%i->value%" onmouseover="mytooltip_show('paintingtooltip-%i->value%','paintingitem-%i->value%');" onmouseout="mytooltip_hide('paintingtooltip-%i->value%');" >
+    <table>
+        <tr>
+        	<td><a href="./?painting=%product_id->value%" >%thumb->value%</a></td>
+        	<td></td>
+            <td><a href="./?painting=%product_id->value%" ><h2>%name->value%</h2></a>
+            
+            <br>
+                 <div id="parameter" >%parameters->value%</div>
+            <br>
+            
+                %group% :%groupnames->value%
+            </td>
+        </tr>
+    </table>
+  <div id="paintingtooltip-%i->value%" class="mytooltip " >
+       <a href="./?onmywall=%backgroundwal_id->value%&painting=%product_id->value%" >on my wall </a>
+       </br>
+       <!--img height="15" width="15" src="/5.0/layout/img/icons/h/%backgroundwal_id->value%" alt="%background%" /-->
+       <a href="./?painter=%painter_id->value%" >painter.info  </a>
+       </br>
+       %detail->value%
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="p100 %row->value%" >
+    <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6" href="./?view=%id->value%" >
+            %postcode->value% %town->value% (%inthevicinityof% 
+            %city->value% %state->value% %isaplaceof% %country->value%)
+    </a>
+</div>

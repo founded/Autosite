@@ -1,0 +1,49 @@
+<script type="text/javascript" src="%path.js->value%webtoolkit.%cripty->value%.js" ></script>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="username" >%username% :</label>
+        <input type="text" onclick="settextselectedfield('User')" class="input-sm col-sm-4 text-right" id="User" name="username" value="%username->value%" required autofocus />
+        <span class="input_info" >%input_info.required%:%login.issafe% %login.asktoreinstall%</span>
+    </div>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="pwx" >%password% :</label>
+        <input type="password" onclick="settextselectedfield('Password')" class="input-sm col-sm-4 text-right" id="Password" name="pwx" required />
+        <span class="input_info" >%input_info.required%:%login.issafe% %login.asktoreinstall%</span>
+    </div>
+    <div class="form-group" >
+        <input type="hidden" id="Key" value="%loginkey->value%" >
+        <span id="loginfo" >%javascript.notenabled%</span>
+    </div>
+    <script type="text/javascript" >
+    	var returntext;
+        document.getElementById("loginfo").innerHTML="";
+    	function tologin(parpwx){
+      		var User = document.getElementById("User");
+      		var Key = document.getElementById("Key");
+      		var Password = document.getElementById("Password");
+            /*document.forms[1].elements.length*/
+      		if(Key != null && Key != ""){
+      		   Password.value =%cripty->value%(Key.value+Password.value);
+               if(User != null && User != ""){
+               	document.forms['login'].submit();
+      			/*document.forms[1].submit();*/
+      		  } else { 
+    	  		document.getElementById("loginfo").innerHTML="%noinput.user.password%";
+                return false;
+    		  }
+            } else {
+                document.getElementById("loginfo").innerHTML="%your.system.under.atack% %please.check.connection% %refresh.page%";
+                return false;
+    		}
+    		return Password.value;
+    	}
+    </script> 
+        <div>
+            <input type="button" class="btn pull-right" onclick="this.form.Password.value = tologin(this.form.Password.value);" value="%login%" />
+        </div>
+        <div>
+            %login.i.dont.remember.password% 
+            <a href='./?lostpassword' target='home' >%clickhere%</a>
+        </div>
+    </div>
+</form>
+   <br>

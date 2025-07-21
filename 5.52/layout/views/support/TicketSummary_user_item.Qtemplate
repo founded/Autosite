@@ -1,0 +1,25 @@
+<div>
+    <span class="col-lg-8 col-md-8 col-sm-9 col-xs-9" >
+           <p class="attention" >%ticketnr%:%support_id->value%|%url%:%url->value%</p>
+           <p>%location->value% | %title->value% | %status%(%STATUS->value%)</p>
+           <br>
+           <span class="col-lg-5 col-md-5 col-sm-10 hidden-xs" >
+               <p>%shortcomment->value%</p>
+               %inputDate->value%
+           </span>
+    </span>
+    <span class="col-lg-5 col-sm-2 col-xs-5" >
+        <br> 
+        <a class="ticketitem" href="./?view_ticket=%id->value%" >
+            <img  height="27" width="27" src="%path.layout->value%img/icons/d/detail.svg"  alt="%detail%" />
+        </a>
+        <a class="ticketitem" href="./?delete=%id->value%" >
+            <img  height="27" width="27" src="%path.layout->value%img/icons/d/delete.svg"  alt="%delete%" />
+        </a>
+        <div class="onoff" >
+            <input class="checkbox col-lg-1" type='checkbox' id='visable[%id->value%]' name='visable[%id->value%] '%isVisable->value% >
+            <label class="col-lg-1" for="visable[%id->value%]" >
+                <img class="Aicon" src="%path.layout->value%img/icons/e/eye.svg" alt="%visable%" >
+            </div>
+    </span> 
+</div>

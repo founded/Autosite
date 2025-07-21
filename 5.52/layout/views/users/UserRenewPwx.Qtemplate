@@ -1,0 +1,16 @@
+<h3>%user.renewpwx%</h3>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="old" >%password.old% :</label>
+    <input type="text" id="old" onclick="settextselectedfield('old')" class="input-sm col-sm-4 text-right" name="old" required>
+    <span class="input_info" >%input_info.required%:%input_info.oldpassword%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="pwx" >%password.new% :</label>
+    <input type="text" id="pwx" onclick="settextselectedfield('pwx')" class="input-sm col-sm-4 text-right" name="pwx" required>
+    <span class="input_info" >%input_info.required%:%input_info.password%</span>
+</div>
+<div class="form-group" >
+    <label class="control-label col-lg-4 col-md-4 col-sm-4" for="pwxe" >%password.new% :</label>
+    <input type="text" id="pwxe" onclick="settextselectedfield('pwxe')" class="input-sm col-sm-4 text-right" name="pwxe" required>
+    <span class="input_info" >%input_info.required%:%input_info.repassword%</span>
+</div>

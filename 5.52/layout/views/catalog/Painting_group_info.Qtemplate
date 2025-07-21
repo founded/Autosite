@@ -1,0 +1,5 @@
+          <div class="group_infotop" style="top:40px; z-index: 7; left:270px; " >
+              <h6>%groupinfo%:%name->value%</h6>
+              %groupinfo->value%
+          </div>
+          <br>

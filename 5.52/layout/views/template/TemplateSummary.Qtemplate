@@ -1,0 +1,10 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+    	<li><a href="./?templates" class="btn btn-info pull-right" >%templates%</a></li>
+        <li><a href="./?translations" class="btn btn-info pull-right" >%translations%</a></li>
+        <li><a href="./?existtranslations" class="btn btn-info pull-right" >%translations%</a></li>
+        <li><a href="./?translatekeys" class="btn btn-info pull-right" >%template.translate%</a></li>
+        <li><a href="./?create" class="btn btn-info pull-right" >%create%</a></li>
+        <li><a href="./?Templatecache" class="btn btn-info pull-right" >%template.remove.oldcache%</a></li>
+    </ul> 
+</span>

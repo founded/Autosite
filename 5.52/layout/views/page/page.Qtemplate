@@ -1,0 +1,8 @@
+<h1>%title->value%</h1>
+%content->value%
+<link href="%path.layout->value%css/editor.css" rel="stylesheet" type="text/css" >
+<div id="Editorfoot" class="Apanel" >
+    <a class="auctionitem" href="./?edit=%id->value%" >
+        <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%edit%" >
+    </a>
+</div>

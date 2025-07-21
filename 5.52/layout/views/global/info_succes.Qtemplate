@@ -1,0 +1,5 @@
+<section id="%id->value%" class="OK" >
+  %input.with.succes.saved%
+  <br />
+  %info->value%
+</section>

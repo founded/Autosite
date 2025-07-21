@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="%locale->value%" >
+    <head>
+        <title>%site.name% %title->value%</title>
+        <meta charset="UTF-8" >
+        <script type="text/javascript" src="%path.layout->value%js/wa.ajax" ></script>
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%bootstrap/css/bootstrap.min.css" >
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%Xdebug.css" >
+	    <link rel="SHORTCUT ICON" href="%path.layout->value%logo.ico" >
+        <link rel="icon" href="%path.layout->value%logo.ico" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="%path.layout->value%logo.ico" />
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%%basic.css->value%" >
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%style.css" >
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%specials.css" >
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%constantes.css" >
+        <link rel="stylesheet" type="text/css" href="%path.layout->value%localoverwrite_%locale->value%.css" >
+        <meta name="robots" content="index, follow" >
+        <meta name="pegi" content="16,17,18,19,20,21-65" >
+        <meta name="googlebot" content="index,follow,archive" >
+        <meta name="keywords" content="%keywords->value%" >
+        <link rel="canonical" href="%URL_SELF->value%" >
+        %location.css->value%
+        <script type="text/javascript" src="%path.layout->value%jquery/jquery.min.js" ></script>
+        <script type="text/javascript" src="%path.layout->value%bootstrap/js/bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div id="topimg" ><!----%title->value%--></div>
+        <svg id="globalwebsite_title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+            <defs>
+              <path id="pathfortext" d="M 7 75 C 10 1 200 90 270 80 C 280 80 460 62 1480 70" fill="none" />
+            </defs>
+            <use xlink:href="#pathfortext" fill="none" stroke="none" />
+            <text font-family="sans-serif" font-size="24" fill="#666699" >
+              <textPath xlink:href="#pathfortext" startOffset="15" >
+                  <tspan fill="#ffE" >%title->value%</tspan>
+              </textPath>
+            </text>
+        </svg>
+        <header id="tophead" >
+            <nav id="myNavbar" class="%collapse->value%" >
+                <ul>
+                    %nav->value%
+                </ul>
+            </nav>
+            %menutypes->value% 
+            %find->value%
+            <div id="langbar" >
+                <a data-toggle="collapse" data-target="#myNavbar,#flags" ><img class="icon" src="%path.layout->value%img/icons/m/menu.svg" alt="%collapse%" ></a>
+            	<div id="flags" class="%collapse->value%" >
+                    <a href="https://nl.%URL_SELF->value%" title="%site.name% %Dutch%" ><img src="%path.layout->value%img/FLAGS/flag_be.gif" alt="%Dutch%" ></a>
+                    <a href="https://en.%URL_SELF->value%" title="%site.name% %english%" ><img src="%path.layout->value%img/FLAGS/flag_en.gif" alt="%english%" ></a>
+                    <a href="https://fr.%URL_SELF->value%" title="%site.name% %french%" ><img src="%path.layout->value%img/FLAGS/flag_fr.gif" alt="%french%" ></a>
+                    <a href="https://nl.%URL_SELF->value%" title="%site.name% %Dutch%" ><img src="%path.layout->value%img/FLAGS/flag_nl.gif" alt="%Dutch%" ></a>
+                    <a href="https://es.%URL_SELF->value%" title="%site.name% %Spanish%" ><img src="%path.layout->value%img/FLAGS/flag_es.gif" alt="%Spanish%" ></a>
+                    <a href="https://ru.%URL_SELF->value%" title="%site.name% %Russia%" ><img src="%path.layout->value%img/FLAGS/flag_ru.gif" alt="%Russia%" ></a>
+                </div>
+            </div>
+            <svg id="boat" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <use xlink:href="#pathforanimate" fill="none" stroke="none" />
+           <!-- image z="6" x="-120" y="25" width="30" height="20" xlink:href="%path.layout->value%img/jacht.gif" >
+            <animateMotion id="pathforanimate"
+              path="M-100,-5 q3,0 -10,15 q15,5 3000,0"
+              begin="1s" dur="9s" repeatCount="indefinite"
+              rotate="auto" stroke="blue"/>
+           </image -->
+       </svg>            
+    </header>
+           <svg id="globalwebsite_title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+              <image z="7" x="400" y="25" width="50" height="60" xlink:href="%path.layout->value%img/castaway.svg" >      
+              </image>
+              <image z="8" x="425" y="45" width="25" height="25" xlink:href="%path.layout->value%img/Jon_loop_front.svg" >      
+              </image>
+           </svg>
+        <section id="container" >
+            <!--article id="content"-->

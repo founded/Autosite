@@ -1,0 +1,11 @@
+<li class="painting group item_li " >
+    <a href="./?filter&group=%id->value%&amp;page=0" >
+        <div id="item-%i->value%" onmouseover="mytooltip_show('tooltip-%i->value%','item-%i->value%',40,270);" onmouseout="mytooltip_hide('tooltip-%i->value%');" >
+          %name->value%
+        </div>
+          <div class="group_infobox group_fixedup mytooltip" id="tooltip-%i->value%" ><!--visual hidden-->
+              <h6>%groupinfo%:%name->value%</h6>
+              %groupinfo->value%
+          </div>
+    </a>
+</li>

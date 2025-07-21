@@ -1,0 +1,11 @@
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="publicname" >%publicname% :</label>
+        <input id="indicationprice" onclick="settextselectedfield('publicname')" type="text" class="input-sm col-sm-3 text-right" name="publicname" value="%publicname->value%" >
+        <span class="input_info" >%input_info.publicname%</span>
+    </div>  
+	<div class="form-group" >
+        <div class="col-lg-5 col-md-5 col-sm-5" >
+          <label class="control-label col-lg-6 col-md-4 col-sm-4" for="biografic" >%biografic%</label>
+          <textarea cols="80" rows="150" wrap="virtual" class="form-control " maxlength="100" name="biografic" id="biografic" >%biografic->value%</textarea>
+		</div>
+    </div>

@@ -1,0 +1,31 @@
+Deze website maakt gebruik van cookies. Waarom? 
+Klik hier voor ons privacy- en cookiebeleid. 
+Door op akkoord te klikken of door gebruik te blijven maken van deze website 
+geeft u aan akkoord te zijn met het gebruik van cookies.
+      <div class="cookiescreen" >
+          <img src="%layoutpath->value%/img/logo.svg" class="icon" alt="%logo%" />
+          <blockquote>
+            <title>%trytoacceptcookie.title%</title>
+            <details>
+                %trytoacceptcookie.content%
+            </details>
+          </blockquote>
+           <blockquote>
+            <title>%trytoacceptbasiccookie.title%</title>
+            <details>
+                %trytoacceptbasiccookie.content%
+            </details>
+          </blockquote>
+          <blockquote>
+            <title>%trytoacceptadvancedcookie.title%</title>
+            <details>
+                %trytoacceptadvancedcookie.content%
+            </details>
+          </blockquote>
+          <blockquote>
+            <title>%trytoacceptcookie.as.a.social.title%</title>
+            <details>
+                %trytoacceptcookie.as.a.social.content%
+            </details>
+          </blockquote>
+      </div>

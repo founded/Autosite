@@ -1,0 +1,62 @@
+   <script>
+        var xmlhttp=false;
+        if(!xmlhttp && typeof XMLHttpRequest!='undefined') {
+          xmlhttp = new XMLHttpRequest();
+        }
+        var timer = 6000; //iedere 5 seconden refreshen
+        function offer(value){
+            name = document.getElementById('name').value;
+            xmlhttp.open("GET", "%path.install->value%/support/Chat/?text="+value+"&name="+name+"&random="+Math.round(9000*Math.random()),true);//method, target, async (set always true!)
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4) {
+                    document.getElementById('chatwindow').innerHTML = xmlhttp.responseText;
+                }
+            }        
+            xmlhttp.send(null);
+            timer = 6000;
+            counter();
+        }
+        function update(){
+            xmlhttp.open("GET", "%path.install->value%/support/Chat/?checkout&chanel=%chanel->value%";//method, target, async (set always true!)
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4) {
+                    document.getElementById('chatwindow').innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.send(null);
+            timer = 6000;
+            counter();
+        }
+        function counter(){
+            if(timer == 0){
+                update();
+            }else{
+                timer = timer - 1000;
+                setTimeout("counter()", 1000);
+            }
+        }
+        function is_enter(eventobjekt){
+           var var_key;
+           if(navigator.appName == "Microsoft Internet Explorer") {
+              var_key = window.event.keyCode;
+           }else{
+              var_key = eventobjekt.which;
+           }
+           if(var_key==13) {//{alert(var_key);
+              offer(value);
+              document.getElementById('chattext').value = "";
+           }
+        }
+        function hasvalue(value){
+           document.getElementById('submitbutton').disabled = (value != ""); 
+        }
+    </script>
+    <input type="text" onclick="settextselectedfield('name')" id="name" name="name" style="width: 600px;" maxlength="256" value="Annoniem" />
+    <div id="chatwindow" style="display:block; width: 600px; height: 400px; overflow: scroll;" >
+        Welcome to the chat. Please type a message.
+    </div><br/>
+    <input type="text" id="chattext" onclick="settextselectedfield('chattext')" name="chattext" onKeyPress="is_enter(event);hasvalue(this.value);" onChange="hasvalue(this.value);" maxlength="256" style="width: 450px;" />
+    <input type="submit" id="submitbutton" onMouseDown="javascript: offer(document.getElementById('chattext').value);document.getElementById('chattext').value = '';" value="offer!" style="width:150px;" disabled />
+    <script>
+        update()
+    </script> 

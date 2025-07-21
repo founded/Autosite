@@ -1,0 +1,121 @@
+#install{
+    background-color:#9999AA;color:#FFF;display:block; 
+    border-color:#424542;padding:25px;position:absolute;
+}
+#install ul{
+	margin:0px;list-style:none;background-color: #ddeeff;
+    border-width:2px;border-style:solid;border-color:#FFF;-moz-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;
+}
+#install ul{
+	display:none;position:absolute;left:100%;top:0;
+    -moz-box-shadow:4px 4px 5px #000000;
+    -webkit-box-shadow:4px 4px 5px #000000;
+    box-shadow:4px 4px 5px #000000;
+}
+.pluginitem>ul,.pluginitem>li{
+    min-width:100px;color:#000;
+    font-size:16px;font-weight:bold;font-family: 	Helvetica,​sans-serif;
+    background:#DDDDEE;
+    border-radius: 3px; 
+    border: 1px solid;
+    border-color: #D0D0D0;
+}
+.pluginitem_li{
+    min-width:940px;color:#000;z-index:99;
+	margin: 10px auto;padding: 5px;min-height:30px;    
+}
+.pluginitem_li span{
+	margin: 1px auto;padding: 1px 10px;
+    min-height:30px;
+}
+#install li:hover>*{
+	display:block;
+}
+#install li{
+	position:relative;display:block;margin: 10px;
+    width:200px;
+    min-height:45px;
+    border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px;
+}
+
+#install{  left:1px;display:inline-block;
+           box-shadow: 0px 0px 3px  #88BBEE, 0 5px 15px #E7F3F2 inset;
+           
+           color: #eee;
+           padding: 10px 10px;
+           margin:0px 0px 3px 10px;
+           text-align: center;
+           border-radius: 22px 22px 3px 3px;
+		   width:220px;vertical-align:top; margin: 10px;
+           font-size: 14px;
+}
+#install>li{
+	margin:3px 0 0;
+}
+#install a:active, #install a:focus{
+}
+#install a{color: #333333;background-color:#9999AA;
+	display:block;vertical-align:top;text-align:left;
+    cursor:pointer;padding:10px;
+    border-width:2px 0 0  1px ;border-style:solid;border-color:#333333;
+    border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+}
+.installed{background-color:#00FF00;}
+#install ul li{
+	float:none;margin:3px 0 0;}
+#install ul a{
+	text-align:left;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+    
+}
+#install li:hover>a,#install li a.pressed{
+	background-color:#99CCFF;border-style:solid;
+}
+#container{
+    padding-bottom: 150px;
+}
+.select-small select{
+     width: 90px;
+}
+
+#packages{
+    left: 25px;
+    right: 25px;
+    display:inline-block;
+	vertical-align:top;border-radius: 18px 18px 3px 3px;
+    padding:5px 20px 5px 25px;margin: 10px 0px 10px 10px;
+}
+#packages h3{
+    background-color:#808080;
+    color: #eee;
+    padding: 7px 0px;
+    margin:0px 0px 0px 0px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #777;
+    font-size: 14px;
+    font-weight:bold;
+}
+#packages .tegel{     
+    display: inline-block;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    width: 230px;
+    text-align: center;
+}
+#packages a{
+    line-height: 10px;
+    color: #333;
+}
+#packages .mytooltip{
+    
+    text-align: left;
+}
+
+#packages .ok{     
+    background-color:#CCFFCC;
+}
+#consol_output{     
+   width: 50%;font-family: Arial;
+    border-color:#424542;padding:100px;float:right
+}
+

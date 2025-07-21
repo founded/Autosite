@@ -1,0 +1,7 @@
+<span class="p100 lineitem" >
+    <ul class="tabs" >
+        <li><a href="./?createYearStat&debug" class="btn btn-info pull-right" >%stat.createyear.debug%</a></li>
+        <li><a href="./?createMonthStat&debug" class="btn btn-info pull-right" >%stat.createmoth.debug%</a></li>
+        <li><a href="./?createYearsecuritystat&debug" class="btn btn-info pull-right" >%stat.usercrimeyear.debug%</a></li>
+    </ul> 
+</span>

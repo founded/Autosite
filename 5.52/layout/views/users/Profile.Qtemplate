@@ -1,0 +1,18 @@
+<section id="userinfo" class="col-lg-12 col-md-10 col-sm-9 col-xs-9 equally %STATUS->value%" >
+    <form action="http://paypal.me/myproject" method="post" >
+      <input src="%path.layout->value%img/icons/p/paypal_donate.svg" name="submit" alt="%make.donation%" border="0" height="31" type="image" width="62" >
+      <a href="https://www.paypal.me/cgi-bin/webscr" class="btn btn-info " ><img height="15" width="15" src="%path.layout->value%img/icons/i/info.svg" alt="%info%" ></a>
+      <input name="encrypted" value="test%donationkey->value%how work this" type="hidden" >
+      <input name="cmd" value="_s-xclick" type="hidden" >
+    </form>
+    <a href="paypal.me/myproject" >test</a>
+    <a href="./?newpassword" class="btn btn-info" >%newpassword%</a>
+    <span>%TYPE->value% : %imputDate->value%</span>
+    <span class="checked" >
+        <input class="checkbox " type='checkbox' id='isenabled' name='isenabled' %ENABLED->value% >
+        <label for="isenabled" >
+            <img height="15" width="15" src="%path.layout->value%img/icons/a/anchor.svg" alt="%enabled%" >
+        </label>
+    </span>
+    email:%email->value%
+</section>

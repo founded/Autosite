@@ -1,0 +1,7 @@
+<div class="%worktime->value%" >
+    <div class="Callendar_month_item " >
+        <a href="%path.install->value%/plan/Week/?year=%Y->value%&weeknr=%weeknr->value%" >
+            <h2>[%weeknr->value%]</h2>
+            %team->value% %worktime->value%
+        </a>    
+    </div>

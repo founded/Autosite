@@ -1,0 +1,121 @@
+<meta name="robots" content="noindex, nofollow" >
+<link href="%path.layout->value%css/editor.css" rel="stylesheet" type="text/css" >
+<form id="editor" class="form-horizontal" role="form" method="post" name="%formname->value%" enctype="multipart/form-data" >
+    <div class="form-group" >
+    <input type="hidden" size="2" readonly="readonly" name="translatetolang" value="%translatetolang->value%" >
+    <input type="hidden" size="2" readonly="readonly" name="translate" value="%page_langlocale->value%" >
+    <input type="hidden" readonly="readonly" name="edit" value="%id->value%" >
+    <br />
+       <!-- ********************** EDITORMENU *********************-->
+	<div class="editormenu" >
+<a class="editorbtn btn cut"		  href="javascript:doWYSIWYG('cut')" 				 id="cut" >%editor.cut%</a> 
+<a class="editorbtn btn copy"		  href="javascript:doWYSIWYG('copy')" 				 id="copy" >%editor.copy%</a> 
+<a class="editorbtn btn paste"		  href="javascript:doWYSIWYG('paste')" 				 id="paste" >%editor.paste%</a> 
+<a class="editorbtn btn bold"         href="javascript:doWYSIWYG('Bold');" 				 id="bold" >%editor.bold%</a> 
+<a class="editorbtn btn underline" 	  href="javascript:doWYSIWYG('underline')" 			 id="underline" >%editor.underline%</a> 
+<a class="editorbtn btn strike" 	  href="javascript:doWYSIWYG('strikethrough')"       id="strike" >%editor.strike%</a>
+<a class="editorbtn btn removeFormat" href="javascript:doWYSIWYG('removeformat')"        id="removeFormat" >%editor.delcss%</a>
+<a class="editorbtn btn ileft" 		  href="javascript:doWYSIWYG('Outdent')" 			 id="ileft" >%editor.indentL%</a> 
+<a class="editorbtn btn iright" 	  href="javascript:doWYSIWYG('Indent')" 			 id="iright" >%editor.indentR%</a> 
+<a class="editorbtn btn rule" 		  href="javascript:doWYSIWYG('inserthorizontalrule')" id="rule" >%editor.rule%</a> 
+<a class="editorbtn btn bullets" 	  href="javascript:doWYSIWYG('insertunorderedlist')" id="bullets" >%editor.bullets%</a> 
+<a class="editorbtn btn ordlist" 	  href="javascript:doWYSIWYG('insertorderedlist')" 	 id="ordlist" >%editor.list%</a>
+	</div>
+    <div class="editormnu" >
+    <span class="editoroption" >
+        <label class="control-label" for="page_status" >%page_status% :</label>
+    	<select name="page_status" > %page_states->value% </select>
+     </span><span class="editoroption" >
+        <label class="control-label" for="page_category" >%page_category% :</label>
+        <select name="page_category" > %page_categorys->value% </select>
+    </span><span class="editoroption" >
+        <input type="hidden" size="2" readonly="readonly" name="page_langlocale" value="%page_langlocale->value%" />
+    </span><span class="editoroption" >          
+        <label class="control-label" for="page_access" >%page_access% :</label>
+        <select name="page_access" > %page_accesses->value% </select>
+    </span><span class="editoroption" >
+         <label class="control-label" for="title" >%page_title% :</label>
+        <input id="title" onclick="settextselectedfield('title')" type="text" name="title" value="%title->value%" required >
+    </span>
+    </div>
+        <label class="control-label" for="content" >%content% :</label>
+        <div  class="form-group" >
+            <!-- ********************** SOURCEPANEL *********************-->
+    		<div id="Sourcepanel" class="Apanel p100 hidden" >
+    			<textarea onclick="settextselectedfield('Source')" id="Source" name="content" wrap="VIRTUAL" class="Source" >%content->value%</textarea>
+    		</div>
+            <!-- ********************** EDITORPANEL *********************-->	
+    	    <div id="Editorpanel" contenteditable="true" class="Apanel" >%content->value%</div>
+         </div>
+<br>        <div class="editormnu" >
+
+        </div>
+        <div id="Imagepanel" class="Apanel" >
+            %editorimages->value%
+        </div>
+        <div id="Imagepanel2" class="Apanel" moveble="" dropable="true" >
+            <a href="" draggable="true" />url</a>
+            <table ondragstart="dragStart" draggable="true" ><tr><td>x</td><td>x</td></tr><tr><td>y</td><td>y</td></tr></table>
+	        <div class="tekstblok left" draggable="true" >left</div>
+	        <div class="tekstblok right" draggable="true" >right</div>
+	        
+		</div>
+        
+        
+        <!-- image editor test 4 -->
+             <script type="text/javascript" >
+         function dragStart(ev) {
+            ev.dataTransfer.effectAllowed='move';
+            ev.dataTransfer.setData("txt", ev.target.getAttribute('id'));
+            ev.dataTransfer.setDragImage(ev.target,0,0);
+            return true;
+         }
+         function dragEnter(ev) {
+            event.preventDefault();
+            return true;
+         }
+         function dragOver(ev) {
+            return false;
+         }
+         function dragDrop(ev) {
+            var src = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(src));
+            ev.stopPropagation();
+            return false;
+         }
+      </script>
+	              <div class="Apanel" >
+            <span class="editoroption" >
+               <label class="control-label" for="shortcomment" >%comment% :</label>
+               <textarea id="shortcomment" name="shortcomment" wrap="VIRTUAL" class="p100" >%shortcomment->value%</textarea>
+            </span>
+            </div>   
+        <!-- test4 -->
+	    <!-- ********************** EDITORFOOTER *********************-->
+		<div id="Editorfoot" class="Apanel" >
+            <a class="btn" href="javascript:tosource();" id="tosource" >
+                <img height="27" width="27" src="%path.layout->value%img/icons/c/code.svg" alt="%editor.TOsource%" />
+            </a>
+            <a class="btn" href="javascript:totexteditor();" id="tosource" >
+                <img height="27" width="27" src="%path.layout->value%img/icons/e/edit.svg" alt="%editor.TOeditor%" />
+            </a>
+            <a class="btn" href="javascript:senddata();" id="tosource" >
+                <img height="27" width="27" src="%path.layout->value%img/icons/s/save.svg" alt="%editor.SAVE%" />
+            </a>
+		</div>
+   </form>
+   <div class="editorpanels" >
+    <script language="JavaScript" src="%path.layout->value%js/editor.js" ></script>
+    <script>
+        var editorpanelname = document.getElementById("Editorpanel");//(-- W3C correction OK! --)
+      //doWYSIWYG('underline')
+    	var oldpanel;
+    	var selection ="";
+    	if (isbrowserok()){
+    		setclass("editERROR",'ERROR hidden');
+    	}else {
+    		setclass("editor",'');
+    	}
+    </script>
+   </div>
+   <link rel="StyleSheet" type="text/css" href="%path.layout->value%css/style_syntax_highlite.css" />

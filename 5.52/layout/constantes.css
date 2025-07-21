@@ -1,0 +1,73 @@
+.OK{
+    background:#8FE698;
+}
+.FAIL{
+    background:#FF9900;
+}
+.VALIDBOX{
+	background: #CCFFCC;
+	border-radius: 3px;
+	border: 2px solid #339966;
+	padding: 15px;
+	margin: 15px;
+	width: 300px;
+}
+.INVALIDBOX{
+	background: #FFCC00;
+	border-radius: 3px;
+	border: 2px solid #FF6600;
+	padding: 15px;
+	margin: 15px;
+	width: 300px;
+}
+.NULL{
+    background:#47BF07;
+}
+.PUBLIC{
+    background:#FF9900;
+}
+.FINANCIAL{
+    background:#FFFF00;
+}
+.TRANSLATE{
+    background:#FFFFFF;
+}
+.MANAGE{
+    background:#47BF07;
+}
+.ADMINISTRATION{
+    background:#47BF07;
+}
+.KING{
+    background:#47BF07;
+}
+.USER{
+    background:#47BF07;
+}
+.MODERATOR{
+    background:#47BF07;
+}
+.CHAIRMAN{
+    background:#47BF07;
+}
+.ACTIVE{
+    background:#47BF07;
+}
+.INACTIVE{
+    background:#47BF07;
+}
+.ERROR{
+    background:#FF6600;
+}
+.PROGRESS{
+    background:#47BF07;
+}
+.CLOSED{
+    background:#CC99FF;
+}
+.OPEN{
+    background:#47BF07;
+}
+.CANCELED{
+    background:#F3B03B;
+}

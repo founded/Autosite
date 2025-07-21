@@ -1,0 +1,12 @@
+<span>
+    <div class="form-group" >
+        <label class="control-label col-lg-4 col-md-4 col-sm-4" for="title" >%title% :</label>
+        <input type="text" id="title" onclick="settextselectedfield('title')" class="input-sm col-sm-4 text-right" name="title" value="%title->value%" required >
+        <span class="input_info" >%input_info.required%:%input_info.support.content%</span>
+    </div>
+    <div class="form-group col-sm-6" >
+      <label class="control-label col-lg-3 col-md-3 col-sm-3" for="detail" >%detail%</label>
+      <textarea onclick="settextselectedfield('detail')" cols="10" rows="6" wrap="virtual" class="form-control" name="detail" id="detail" >%detail->value%</textarea>
+      <span class="input_info" >%input_info.required%:%input_info.support.content%</span>
+    </div>
+</span>
