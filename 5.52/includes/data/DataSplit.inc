@@ -41,7 +41,7 @@ class DataSplit{
         }
         return $array;
     }
-    /*public function spliter(&$data,$regx,$needle){
+    public function spliter(&$data,$regx,$needle){
         $array=[];
         preg_match_all($regx,$data,$result,PREG_PATTERN_ORDER);
         if($this->printcontent){print  '<pre>$regx<br>'.$regx.print_r($result,true).'</pre>';}
@@ -59,7 +59,7 @@ class DataSplit{
             if($this->printcontent){print '<br>'.print_r($result,true);}
         }
         return $array;
-    }*/
+    }
     public function linespliter(&$data,$regx,$needle){
         $array=[];
         preg_match($regx,$data,$result);
